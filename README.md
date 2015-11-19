@@ -1,6 +1,13 @@
-AarhusWeather.Forms
+MyWeather.Forms
 ===================
 
-Live app built on stage in 30 minutes at ANUG
+This is a small sample application showing how to query OpenWeatherMap.org to gather weather for a current location.
 
-This is not great code as it was all built really really fast on stage at ANUG in under 30 minutes in Xamarin.Forms. I will be creating a full working example called MyWeather sometime in the future! But have fun!
+Built with Xamarin.Forms with support for:
+* iOS
+* Android
+* UWP
+
+Grabs current weather and 5 day forecast.
+
+![](Images/promo.png)

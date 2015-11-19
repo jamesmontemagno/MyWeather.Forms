@@ -1,7 +1,7 @@
 #################
 ## Eclipse
 #################
-
+DTAR_*/
 *.pydevproject
 .project
 .metadata
@@ -16,6 +16,7 @@ local.properties
 .settings/
 .loadpath
 mobile.userprefs
+.nuget
 
 # External tool builders
 .externalToolBuilders/
