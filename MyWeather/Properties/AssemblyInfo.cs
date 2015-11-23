@@ -11,6 +11,11 @@ using Xamarin.Forms.Xaml;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
+//Xamarin.Forms pre-compiled XAML
+//For iOS/Android
+//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+
+
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
 // The form "{Major}.{Minor}.*" will automatically update the build and revision,
 // and "{Major}.{Minor}.{Build}.*" will update just the revision.

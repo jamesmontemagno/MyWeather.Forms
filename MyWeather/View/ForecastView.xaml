@@ -5,6 +5,10 @@
              Title="Forecast">
     <ListView ItemsSource="{Binding Forecast.Items}"
               HasUnevenRows="True"
+              CachingStrategy="RecycleElement"
+              IsPullToRefreshEnabled="True"
+              RefreshCommand="{Binding GetWeatherCommand}"
+              IsRefreshing="{Binding IsBusy, Mode=OneWay}"
               x:Name="ListViewWeather">
         <ListView.SeparatorColor>
             <OnPlatform x:TypeArguments="Color" iOS="Transparent"/>
