@@ -98,7 +98,7 @@ namespace MyWeather.Models
         public string Date { get; set; } = string.Empty;
 
         [JsonIgnore]
-        public string DisplayDate => DateTime.Parse(Date).AddDays(8).ToLocalTime().ToString("g");
+        public string DisplayDate => DateTime.Parse(Date).ToLocalTime().ToString("g");
         [JsonIgnore]
         public string DisplayTemp => $"Temp: {MainWeather?.Temperature ?? 0}° {Weather?[0]?.Main ?? string.Empty}";
         [JsonIgnore]
