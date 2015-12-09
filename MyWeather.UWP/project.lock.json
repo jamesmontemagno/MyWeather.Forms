@@ -1544,37 +1544,37 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/1.1.1": {
+      "Xam.Plugin.Geolocator/3.0.1": {
         "compile": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         },
         "runtime": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         }
       },
-      "Xam.Plugins.Settings/1.5.2": {
+      "Xam.Plugins.Settings/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xam.Plugins.TextToSpeech/1.0.5": {
+      "Xam.Plugins.TextToSpeech/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6490": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -3229,37 +3229,37 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/1.1.1": {
+      "Xam.Plugin.Geolocator/3.0.1": {
         "compile": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         },
         "runtime": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         }
       },
-      "Xam.Plugins.Settings/1.5.2": {
+      "Xam.Plugins.Settings/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xam.Plugins.TextToSpeech/1.0.5": {
+      "Xam.Plugins.TextToSpeech/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6490": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -4886,37 +4886,37 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/1.1.1": {
+      "Xam.Plugin.Geolocator/3.0.1": {
         "compile": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         },
         "runtime": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         }
       },
-      "Xam.Plugins.Settings/1.5.2": {
+      "Xam.Plugins.Settings/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xam.Plugins.TextToSpeech/1.0.5": {
+      "Xam.Plugins.TextToSpeech/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6490": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -6576,37 +6576,37 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/1.1.1": {
+      "Xam.Plugin.Geolocator/3.0.1": {
         "compile": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         },
         "runtime": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         }
       },
-      "Xam.Plugins.Settings/1.5.2": {
+      "Xam.Plugins.Settings/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xam.Plugins.TextToSpeech/1.0.5": {
+      "Xam.Plugins.TextToSpeech/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6490": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -8233,37 +8233,37 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/1.1.1": {
+      "Xam.Plugin.Geolocator/3.0.1": {
         "compile": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         },
         "runtime": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         }
       },
-      "Xam.Plugins.Settings/1.5.2": {
+      "Xam.Plugins.Settings/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xam.Plugins.TextToSpeech/1.0.5": {
+      "Xam.Plugins.TextToSpeech/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6490": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -9923,37 +9923,37 @@
           "lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/1.1.1": {
+      "Xam.Plugin.Geolocator/3.0.1": {
         "compile": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         },
         "runtime": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         }
       },
-      "Xam.Plugins.Settings/1.5.2": {
+      "Xam.Plugins.Settings/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xam.Plugins.TextToSpeech/1.0.5": {
+      "Xam.Plugins.TextToSpeech/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6490": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -11580,37 +11580,37 @@
           "runtimes/win8-aot/lib/netcore50/System.Xml.XmlSerializer.dll": {}
         }
       },
-      "Xam.Plugin.Geolocator/1.1.1": {
+      "Xam.Plugin.Geolocator/3.0.1": {
         "compile": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         },
         "runtime": {
-          "lib/win8/Geolocator.Plugin.Abstractions.dll": {},
-          "lib/win8/Geolocator.Plugin.dll": {}
+          "lib/UAP10/Plugin.Geolocator.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Geolocator.dll": {}
         }
       },
-      "Xam.Plugins.Settings/1.5.2": {
+      "Xam.Plugins.Settings/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.Settings.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.Settings.dll": {}
+          "lib/UAP10/Plugin.Settings.Abstractions.dll": {},
+          "lib/UAP10/Plugin.Settings.dll": {}
         }
       },
-      "Xam.Plugins.TextToSpeech/1.0.5": {
+      "Xam.Plugins.TextToSpeech/2.0.0": {
         "compile": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         },
         "runtime": {
-          "lib/win8/Refractored.Xam.TTS.Abstractions.dll": {},
-          "lib/win8/Refractored.Xam.TTS.dll": {}
+          "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll": {},
+          "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.0.0.6484": {
+      "Xamarin.Forms/2.0.0.6490": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.dll": {},
@@ -15006,156 +15006,174 @@
         "System.Xml.XmlSerializer.nuspec"
       ]
     },
-    "Xam.Plugin.Geolocator/1.1.1": {
-      "sha512": "rq16bxJOeo9fhnqC6lVg8CUrUb5ulATh7aLDlm2f7MSEgncWLyF9LLYGQJubOWP+Csj+0ybUM/WPpPujhLy+Wg==",
+    "Xam.Plugin.Geolocator/3.0.1": {
+      "sha512": "HX6E0BkSy8emwiA/8L2SLRCXXpDD8aExI2bfSklE47SQMHfPeSI2CpzMu9GCcyMp7ZdjiUqwLr6soID2EoK5Zg==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
         "_rels/.rels",
         "content/MonoAndroid10/PluginsHelp/GeolocatorReadme.txt.pp",
         "content/MonoTouch10/PluginsHelp/GeolocatorReadme.txt.pp",
-        "content/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/PluginsHelp/GeolocatorReadme.txt.pp",
+        "content/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/PluginsHelp/GeolocatorReadme.txt.pp",
+        "content/UAP10/PluginsHelp/GeolocatorReadme.txt.pp",
         "content/win8/PluginsHelp/GeolocatorReadme.txt.pp",
         "content/wp8/PluginsHelp/GeolocatorReadme.txt.pp",
         "content/wpa81/PluginsHelp/GeolocatorReadme.txt.pp",
         "content/Xamarin.iOS10/PluginsHelp/GeolocatorReadme.txt.pp",
-        "lib/MonoAndroid10/Geolocator.Plugin.Abstractions.dll",
-        "lib/MonoAndroid10/Geolocator.Plugin.Abstractions.pdb",
-        "lib/MonoAndroid10/Geolocator.Plugin.Abstractions.xml",
-        "lib/MonoAndroid10/Geolocator.Plugin.dll",
-        "lib/MonoAndroid10/Geolocator.Plugin.pdb",
-        "lib/MonoAndroid10/Geolocator.Plugin.xml",
-        "lib/MonoTouch10/Geolocator.Plugin.Abstractions.dll",
-        "lib/MonoTouch10/Geolocator.Plugin.Abstractions.xml",
-        "lib/MonoTouch10/Geolocator.Plugin.dll",
-        "lib/MonoTouch10/Geolocator.Plugin.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Geolocator.Plugin.Abstractions.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Geolocator.Plugin.Abstractions.pdb",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Geolocator.Plugin.Abstractions.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Geolocator.Plugin.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Geolocator.Plugin.pdb",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Geolocator.Plugin.xml",
-        "lib/win8/Geolocator.Plugin.Abstractions.dll",
-        "lib/win8/Geolocator.Plugin.Abstractions.pdb",
-        "lib/win8/Geolocator.Plugin.Abstractions.xml",
-        "lib/win8/Geolocator.Plugin.dll",
-        "lib/win8/Geolocator.Plugin.pdb",
-        "lib/win8/Geolocator.Plugin.xml",
-        "lib/wp8/Geolocator.Plugin.Abstractions.dll",
-        "lib/wp8/Geolocator.Plugin.Abstractions.pdb",
-        "lib/wp8/Geolocator.Plugin.Abstractions.xml",
-        "lib/wp8/Geolocator.Plugin.dll",
-        "lib/wp8/Geolocator.Plugin.pdb",
-        "lib/wp8/Geolocator.Plugin.xml",
-        "lib/wpa81/Geolocator.Plugin.Abstractions.dll",
-        "lib/wpa81/Geolocator.Plugin.Abstractions.pdb",
-        "lib/wpa81/Geolocator.Plugin.Abstractions.xml",
-        "lib/wpa81/Geolocator.Plugin.dll",
-        "lib/wpa81/Geolocator.Plugin.pdb",
-        "lib/wpa81/Geolocator.Plugin.xml",
-        "lib/Xamarin.iOS10/Geolocator.Plugin.Abstractions.dll",
-        "lib/Xamarin.iOS10/Geolocator.Plugin.Abstractions.xml",
-        "lib/Xamarin.iOS10/Geolocator.Plugin.dll",
-        "lib/Xamarin.iOS10/Geolocator.Plugin.xml",
-        "package/services/metadata/core-properties/b33cef362d2343deadf58b59ded44ef5.psmdcp",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Geolocator.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Geolocator.dll",
+        "lib/MonoAndroid10/Plugin.Geolocator.pdb",
+        "lib/MonoAndroid10/Plugin.Geolocator.xml",
+        "lib/MonoTouch10/Plugin.Geolocator.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.Geolocator.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.Geolocator.dll",
+        "lib/MonoTouch10/Plugin.Geolocator.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Geolocator.xml",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.dll",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.pdb",
+        "lib/UAP10/Plugin.Geolocator.Abstractions.xml",
+        "lib/UAP10/Plugin.Geolocator.dll",
+        "lib/UAP10/Plugin.Geolocator.pdb",
+        "lib/UAP10/Plugin.Geolocator.xml",
+        "lib/win8/Plugin.Geolocator.Abstractions.dll",
+        "lib/win8/Plugin.Geolocator.Abstractions.pdb",
+        "lib/win8/Plugin.Geolocator.Abstractions.xml",
+        "lib/win8/Plugin.Geolocator.dll",
+        "lib/win8/Plugin.Geolocator.pdb",
+        "lib/win8/Plugin.Geolocator.xml",
+        "lib/wp8/Plugin.Geolocator.Abstractions.dll",
+        "lib/wp8/Plugin.Geolocator.Abstractions.pdb",
+        "lib/wp8/Plugin.Geolocator.Abstractions.xml",
+        "lib/wp8/Plugin.Geolocator.dll",
+        "lib/wp8/Plugin.Geolocator.pdb",
+        "lib/wp8/Plugin.Geolocator.xml",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.dll",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.pdb",
+        "lib/wpa81/Plugin.Geolocator.Abstractions.xml",
+        "lib/wpa81/Plugin.Geolocator.dll",
+        "lib/wpa81/Plugin.Geolocator.pdb",
+        "lib/wpa81/Plugin.Geolocator.xml",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.dll",
+        "lib/Xamarin.iOS10/Plugin.Geolocator.xml",
+        "package/services/metadata/core-properties/16b9ce3c2a534ad8baef83faae679fb0.psmdcp",
         "Xam.Plugin.Geolocator.nuspec"
       ]
     },
-    "Xam.Plugins.Settings/1.5.2": {
-      "sha512": "+eY6Eco8TZoSgP8GTjtAraepGCOYpz1YihdfjRbtDTKnYw48Q0qSmtavq/IodNfyCFV5AB3RdDQSl1kR+z6i6A==",
+    "Xam.Plugins.Settings/2.0.0": {
+      "sha512": "N8e3zZg0t0iXiGqpccpo5/EGZf/9Q+0Za+9wwRrRUy/mVvZ4UlghwBDiZwj25IP8J59M/OkuMOy/58LO7dclQQ==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
         "_rels/.rels",
         "content/MonoAndroid10/PluginsHelp/SettingsReadme.txt.pp",
         "content/MonoTouch10/PluginsHelp/SettingsReadme.txt.pp",
-        "content/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Helpers/Settings.cs.pp",
+        "content/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Helpers/Settings.cs.pp",
+        "content/UAP10/PluginsHelp/SettingsReadme.txt.pp",
         "content/win8/PluginsHelp/SettingsReadme.txt.pp",
         "content/wp8/PluginsHelp/SettingsReadme.txt.pp",
         "content/wpa81/PluginsHelp/SettingsReadme.txt.pp",
         "content/Xamarin.iOS10/PluginsHelp/SettingsReadme.txt.pp",
-        "lib/MonoAndroid10/Refractored.Xam.Settings.Abstractions.dll",
-        "lib/MonoAndroid10/Refractored.Xam.Settings.Abstractions.xml",
-        "lib/MonoAndroid10/Refractored.Xam.Settings.dll",
-        "lib/MonoAndroid10/Refractored.Xam.Settings.xml",
-        "lib/MonoTouch10/Refractored.Xam.Settings.Abstractions.dll",
-        "lib/MonoTouch10/Refractored.Xam.Settings.Abstractions.xml",
-        "lib/MonoTouch10/Refractored.Xam.Settings.dll",
-        "lib/MonoTouch10/Refractored.Xam.Settings.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.Settings.Abstractions.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.Settings.Abstractions.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.Settings.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.Settings.xml",
-        "lib/win8/Refractored.Xam.Settings.Abstractions.dll",
-        "lib/win8/Refractored.Xam.Settings.Abstractions.xml",
-        "lib/win8/Refractored.Xam.Settings.dll",
-        "lib/win8/Refractored.Xam.Settings.xml",
-        "lib/wp8/Refractored.Xam.Settings.Abstractions.dll",
-        "lib/wp8/Refractored.Xam.Settings.Abstractions.xml",
-        "lib/wp8/Refractored.Xam.Settings.dll",
-        "lib/wp8/Refractored.Xam.Settings.xml",
-        "lib/wpa81/Refractored.Xam.Settings.Abstractions.dll",
-        "lib/wpa81/Refractored.Xam.Settings.Abstractions.xml",
-        "lib/wpa81/Refractored.Xam.Settings.dll",
-        "lib/wpa81/Refractored.Xam.Settings.xml",
-        "lib/Xamarin.iOS10/Refractored.Xam.Settings.Abstractions.dll",
-        "lib/Xamarin.iOS10/Refractored.Xam.Settings.Abstractions.xml",
-        "lib/Xamarin.iOS10/Refractored.Xam.Settings.dll",
-        "lib/Xamarin.iOS10/Refractored.Xam.Settings.xml",
-        "package/services/metadata/core-properties/918a8fa776574df192e318bff0ade8e7.psmdcp",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.Settings.dll",
+        "lib/MonoAndroid10/Plugin.Settings.xml",
+        "lib/MonoTouch10/Plugin.Settings.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.Settings.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.Settings.dll",
+        "lib/MonoTouch10/Plugin.Settings.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.Settings.xml",
+        "lib/UAP10/Plugin.Settings.Abstractions.dll",
+        "lib/UAP10/Plugin.Settings.Abstractions.xml",
+        "lib/UAP10/Plugin.Settings.dll",
+        "lib/UAP10/Plugin.Settings.xml",
+        "lib/win8/Plugin.Settings.Abstractions.dll",
+        "lib/win8/Plugin.Settings.Abstractions.xml",
+        "lib/win8/Plugin.Settings.dll",
+        "lib/win8/Plugin.Settings.xml",
+        "lib/wp8/Plugin.Settings.Abstractions.dll",
+        "lib/wp8/Plugin.Settings.Abstractions.xml",
+        "lib/wp8/Plugin.Settings.dll",
+        "lib/wp8/Plugin.Settings.xml",
+        "lib/wpa81/Plugin.Settings.Abstractions.dll",
+        "lib/wpa81/Plugin.Settings.Abstractions.xml",
+        "lib/wpa81/Plugin.Settings.dll",
+        "lib/wpa81/Plugin.Settings.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.Settings.dll",
+        "lib/Xamarin.iOS10/Plugin.Settings.xml",
+        "package/services/metadata/core-properties/c2e6dacaad5c43d8b18ca45832679d78.psmdcp",
         "Xam.Plugins.Settings.nuspec"
       ]
     },
-    "Xam.Plugins.TextToSpeech/1.0.5": {
-      "sha512": "x9lNU8w/awlrPcy71tJH/I2spXhU6l4r2rbENwu2PrUyQJMjqTbRT3El7vtXvnA4nkfXYlu3E5115eNyV6yGIQ==",
+    "Xam.Plugins.TextToSpeech/2.0.0": {
+      "sha512": "yHH0zmn/TPiWwNdhzzeTqx20O5CySSMqYI8jo2R0plbBjq34EZ5YI915nmJO0pKF6IOsB30STyi/jZkD6Lk/kg==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
         "_rels/.rels",
-        "lib/MonoAndroid10/Refractored.Xam.TTS.Abstractions.dll",
-        "lib/MonoAndroid10/Refractored.Xam.TTS.Abstractions.pdb",
-        "lib/MonoAndroid10/Refractored.Xam.TTS.Abstractions.xml",
-        "lib/MonoAndroid10/Refractored.Xam.TTS.dll",
-        "lib/MonoAndroid10/Refractored.Xam.TTS.pdb",
-        "lib/MonoAndroid10/Refractored.Xam.TTS.xml",
-        "lib/MonoTouch10/Refractored.Xam.TTS.Abstractions.dll",
-        "lib/MonoTouch10/Refractored.Xam.TTS.Abstractions.xml",
-        "lib/MonoTouch10/Refractored.Xam.TTS.dll",
-        "lib/MonoTouch10/Refractored.Xam.TTS.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.TTS.Abstractions.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.TTS.Abstractions.pdb",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.TTS.Abstractions.xml",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.TTS.dll",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.TTS.pdb",
-        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Refractored.Xam.TTS.xml",
-        "lib/win8/Refractored.Xam.TTS.Abstractions.dll",
-        "lib/win8/Refractored.Xam.TTS.Abstractions.pdb",
-        "lib/win8/Refractored.Xam.TTS.Abstractions.xml",
-        "lib/win8/Refractored.Xam.TTS.dll",
-        "lib/win8/Refractored.Xam.TTS.pdb",
-        "lib/win8/Refractored.Xam.TTS.xml",
-        "lib/wp8/Refractored.Xam.TTS.Abstractions.dll",
-        "lib/wp8/Refractored.Xam.TTS.Abstractions.pdb",
-        "lib/wp8/Refractored.Xam.TTS.Abstractions.xml",
-        "lib/wp8/Refractored.Xam.TTS.dll",
-        "lib/wp8/Refractored.Xam.TTS.pdb",
-        "lib/wp8/Refractored.Xam.TTS.xml",
-        "lib/wpa81/Refractored.Xam.TTS.Abstractions.dll",
-        "lib/wpa81/Refractored.Xam.TTS.Abstractions.pdb",
-        "lib/wpa81/Refractored.Xam.TTS.Abstractions.xml",
-        "lib/wpa81/Refractored.Xam.TTS.dll",
-        "lib/wpa81/Refractored.Xam.TTS.pdb",
-        "lib/wpa81/Refractored.Xam.TTS.xml",
-        "lib/Xamarin.iOS10/Refractored.Xam.TTS.Abstractions.dll",
-        "lib/Xamarin.iOS10/Refractored.Xam.TTS.Abstractions.xml",
-        "lib/Xamarin.iOS10/Refractored.Xam.TTS.dll",
-        "lib/Xamarin.iOS10/Refractored.Xam.TTS.xml",
-        "package/services/metadata/core-properties/95308315d08349f296e4aba9db0b8a98.psmdcp",
+        "lib/MonoAndroid10/Plugin.TextToSpeech.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.TextToSpeech.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.TextToSpeech.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.TextToSpeech.dll",
+        "lib/MonoAndroid10/Plugin.TextToSpeech.pdb",
+        "lib/MonoAndroid10/Plugin.TextToSpeech.xml",
+        "lib/MonoTouch10/Plugin.TextToSpeech.Abstractions.dll",
+        "lib/MonoTouch10/Plugin.TextToSpeech.Abstractions.xml",
+        "lib/MonoTouch10/Plugin.TextToSpeech.dll",
+        "lib/MonoTouch10/Plugin.TextToSpeech.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.TextToSpeech.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.TextToSpeech.Abstractions.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.TextToSpeech.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.TextToSpeech.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.TextToSpeech.pdb",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.TextToSpeech.xml",
+        "lib/UAP10/Plugin.TextToSpeech.Abstractions.dll",
+        "lib/UAP10/Plugin.TextToSpeech.Abstractions.pdb",
+        "lib/UAP10/Plugin.TextToSpeech.Abstractions.xml",
+        "lib/UAP10/Plugin.TextToSpeech.dll",
+        "lib/UAP10/Plugin.TextToSpeech.pdb",
+        "lib/UAP10/Plugin.TextToSpeech.xml",
+        "lib/win8/Plugin.TextToSpeech.Abstractions.dll",
+        "lib/win8/Plugin.TextToSpeech.Abstractions.pdb",
+        "lib/win8/Plugin.TextToSpeech.Abstractions.xml",
+        "lib/win8/Plugin.TextToSpeech.dll",
+        "lib/win8/Plugin.TextToSpeech.pdb",
+        "lib/win8/Plugin.TextToSpeech.xml",
+        "lib/wp8/Plugin.TextToSpeech.Abstractions.dll",
+        "lib/wp8/Plugin.TextToSpeech.Abstractions.pdb",
+        "lib/wp8/Plugin.TextToSpeech.Abstractions.xml",
+        "lib/wp8/Plugin.TextToSpeech.dll",
+        "lib/wp8/Plugin.TextToSpeech.pdb",
+        "lib/wp8/Plugin.TextToSpeech.xml",
+        "lib/wpa81/Plugin.TextToSpeech.Abstractions.dll",
+        "lib/wpa81/Plugin.TextToSpeech.Abstractions.pdb",
+        "lib/wpa81/Plugin.TextToSpeech.Abstractions.xml",
+        "lib/wpa81/Plugin.TextToSpeech.dll",
+        "lib/wpa81/Plugin.TextToSpeech.pdb",
+        "lib/wpa81/Plugin.TextToSpeech.xml",
+        "lib/Xamarin.iOS10/Plugin.TextToSpeech.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.TextToSpeech.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.TextToSpeech.dll",
+        "lib/Xamarin.iOS10/Plugin.TextToSpeech.xml",
+        "package/services/metadata/core-properties/a5c490c3fca848ceb7d3e4d05802364e.psmdcp",
         "Xam.Plugins.TextToSpeech.nuspec"
       ]
     },
-    "Xamarin.Forms/2.0.0.6484": {
-      "sha512": "BqZyqiExd9a+v0g/pBVDRhgpTUnfcFKizWiQSDbncboSuemkybF3QDM/IESX+wLqB/pb8ARYmGAWCPwO7CxHGw==",
+    "Xamarin.Forms/2.0.0.6490": {
+      "sha512": "jTQp/dIlAT2J3dvFwr+UsP0COsTmkTuPQ2ySnYnrLyoHV0gbUueMt1oPmBnFEDedoUxhEQIhMFbzGRKuiS+Wvw==",
       "type": "Package",
       "files": [
         "[Content_Types].xml",
@@ -15248,7 +15266,7 @@
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
-        "package/services/metadata/core-properties/47fca8afb46f49089b9401c3251129cf.psmdcp",
+        "package/services/metadata/core-properties/bc55d49ed9c94f79b5764d7531ffc462.psmdcp",
         "tools/init.ps1",
         "tools/Xamarin.Forms.Core.Design.dll",
         "tools/Xamarin.Forms.Xaml.Design.dll",
@@ -15308,10 +15326,10 @@
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.0.0",
       "Newtonsoft.Json >= 7.0.1",
-      "Xam.Plugin.Geolocator >= 1.1.1",
-      "Xam.Plugins.Settings >= 1.5.2",
-      "Xam.Plugins.TextToSpeech >= 1.0.5",
-      "Xamarin.Forms >= 2.0.0.6484",
+      "Xam.Plugin.Geolocator >= 3.0.1",
+      "Xam.Plugins.Settings >= 2.0.0",
+      "Xam.Plugins.TextToSpeech >= 2.0.0",
+      "Xamarin.Forms >= 2.0.0.6490",
       "Xamarin.Insights >= 1.11.2"
     ],
     "UAP,Version=v10.0": []

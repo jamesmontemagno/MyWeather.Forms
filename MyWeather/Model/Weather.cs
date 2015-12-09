@@ -5,23 +5,23 @@ using System.Collections.Generic;
 namespace MyWeather.Models
 {
     public class Coord
-	{
+    {
         [JsonProperty("lon")]
         public double Longitude { get; set; } = 0;
 
         [JsonProperty("lat")]
         public double Latitude { get; set; } = 0;
-	}
+    }
 
-	public class Sys
-	{
+    public class Sys
+    {
 
         [JsonProperty("country")]
         public string Country { get; set; } = string.Empty;
-	}
+    }
 
-	public class Weather
-	{
+    public class Weather
+    {
         [JsonProperty("id")]
         public int Id { get; set; } = 0;
 
@@ -33,10 +33,10 @@ namespace MyWeather.Models
 
         [JsonProperty("icon")]
         public string Icon { get; set; } = string.Empty;
-	}
+    }
 
-	public class Main
-	{
+    public class Main
+    {
         [JsonProperty("temp")]
         public double Temperature { get; set; } = 0;
         [JsonProperty("pressure")]
@@ -49,27 +49,27 @@ namespace MyWeather.Models
 
         [JsonProperty("temp_max")]
         public double MaxTemperature { get; set; } = 0;
-	}
+    }
 
-	public class Wind
-	{
+    public class Wind
+    {
         [JsonProperty("speed")]
         public double Speed { get; set; } = 0;
 
         [JsonProperty("deg")]
         public double WindDirectionDegrees { get; set; } = 0;
 
-	}
+    }
 
-	public class Clouds
-	{
+    public class Clouds
+    {
 
         [JsonProperty("all")]
         public int CloudinessPercent { get; set; } = 0;
-	}
+    }
 
-	public class WeatherRoot
-	{
+    public class WeatherRoot
+    {
         [JsonProperty("coord")]
         public Coord Coordinates { get; set; } = new Coord();
 

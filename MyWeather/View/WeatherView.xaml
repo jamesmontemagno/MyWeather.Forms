@@ -4,7 +4,21 @@
              x:Class="MyWeather.View.WeatherView"
              Title="Weather">
     <StackLayout Padding="10" Spacing="10">
-        <Entry Text="{Binding Location}"/>
+        <Entry Text="{Binding Location}">
+            <Entry.Triggers>
+                <DataTrigger TargetType="Entry"
+                             Binding="{Binding UseGPS}"
+                             Value="true">
+                    <Setter Property="IsEnabled" Value="false"/>
+                </DataTrigger>
+            </Entry.Triggers>
+        </Entry>
+
+        <StackLayout Orientation="Horizontal" Spacing="10">
+            <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+            <Switch IsToggled="{Binding UseGPS}"/>
+        </StackLayout>
+        
         <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
         <Label Text="{Binding Temp}" FontSize="24"/>
         <Label Text="{Binding Condition}"/>

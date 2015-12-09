@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeather", "MyWeather\MyWeather.csproj", "{5366CC83-65A3-4969-B883-3229108447E2}"
 EndProject
@@ -121,6 +121,8 @@ Global
 		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}.Debug|x86.Build.0 = Debug|x86
 		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}.Debug|x86.Deploy.0 = Debug|x86
 		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}.Release|Any CPU.ActiveCfg = Release|x86
+		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}.Release|Any CPU.Build.0 = Release|x86
+		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}.Release|Any CPU.Deploy.0 = Release|x86
 		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}.Release|ARM.ActiveCfg = Release|ARM
 		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}.Release|ARM.Build.0 = Release|ARM
 		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}.Release|ARM.Deploy.0 = Release|ARM
