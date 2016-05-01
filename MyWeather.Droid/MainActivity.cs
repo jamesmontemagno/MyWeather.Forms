@@ -17,14 +17,15 @@ namespace MyWeather.Droid
 
 		protected override void OnCreate (Bundle bundle)
 		{
-			base.OnCreate (bundle);
+			
+		    ToolbarResource = Resource.Layout.toolbar;
+		    TabLayoutResource = Resource.Layout.tabs;
+		    base.OnCreate (bundle);
 
-            Forms.Init(this, bundle);
-            Xamarin.Insights.Initialize(Xamarin.Insights.DebugModeKey, this);
-
-            ToolbarResource = Resource.Layout.toolbar;
-            TabLayoutResource = Resource.Layout.tabs;
-            LoadApplication(new App());
+		    Forms.Init(this, bundle);
+		    Xamarin.Insights.Initialize(Xamarin.Insights.DebugModeKey, this);
+		
+		    LoadApplication(new App());
 		}
 	}
 }
