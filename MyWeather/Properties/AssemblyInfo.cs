@@ -12,8 +12,7 @@ using Xamarin.Forms.Xaml;
 [assembly: AssemblyCulture("")]
 
 //Xamarin.Forms pre-compiled XAML
-//For iOS/Android
-//[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".

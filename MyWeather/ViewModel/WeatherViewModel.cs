@@ -8,6 +8,8 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using System.Collections.ObjectModel;
+using Plugin.TextToSpeech;
 
 namespace MyWeather.ViewModels
 {
@@ -78,8 +80,8 @@ namespace MyWeather.ViewModels
             set { isBusy = value; OnPropertyChanged(); }
         }
 
-        WeatherForecastRoot forecast;
-        public WeatherForecastRoot Forecast
+        ObservableCollection<WeatherRoot> forecast = new ObservableCollection<WeatherRoot>();
+        public ObservableCollection<WeatherRoot> Forecast
         {
             get { return forecast; }
             set { forecast = value; OnPropertyChanged(); }
@@ -101,13 +103,13 @@ namespace MyWeather.ViewModels
             {
                 WeatherRoot weatherRoot = null;
                 var units = IsImperial ? Units.Imperial : Units.Metric;
-               
+
 
                 if (UseGPS)
                 {
-                    //Get weather by GPS
-                    var local = await CrossGeolocator.Current.GetPositionAsync(10000);
-                    weatherRoot = await WeatherService.GetWeather(local.Latitude, local.Longitude, units);
+					
+                    var gps = await CrossGeolocator.Current.GetPositionAsync(10000);
+                    weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
                 }
                 else
                 {
@@ -116,17 +118,19 @@ namespace MyWeather.ViewModels
                 }
 
                 //Get forecast based on cityId
-                Forecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
+                var fullForecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
+                Forecast.Clear();
+                foreach (var item in fullForecast.Items)
+                    Forecast.Add(item);
 
                 var unit = IsImperial ? "F" : "C";
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
-
+                CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
             }
             catch (Exception ex)
             {
                 Temp = "Unable to get Weather";
-                Xamarin.Insights.Report(ex);
             }
             finally
             {

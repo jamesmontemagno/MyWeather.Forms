@@ -8,6 +8,8 @@ using Android.Widget;
 using Android.OS;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
+using Plugin.Permissions;
+using Android.Content.PM;
 
 namespace MyWeather.Droid
 {
@@ -23,11 +25,15 @@ namespace MyWeather.Droid
 		    base.OnCreate (bundle);
 
 		    Forms.Init(this, bundle);
-		    Xamarin.Insights.Initialize(Xamarin.Insights.DebugModeKey, this);
 		
 		    LoadApplication(new App());
 		}
-	}
+
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+        }
+    }
 }
 
 

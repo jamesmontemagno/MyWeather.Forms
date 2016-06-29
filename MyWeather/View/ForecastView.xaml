@@ -3,12 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyWeather.View.ForecastView"
              Title="Forecast">
-    <ListView ItemsSource="{Binding Forecast.Items}"
+    <ListView ItemsSource="{Binding Forecast}"
               HasUnevenRows="True"
               CachingStrategy="RecycleElement"
               IsPullToRefreshEnabled="True"
               RefreshCommand="{Binding GetWeatherCommand}"
               IsRefreshing="{Binding IsBusy, Mode=OneWay}"
+              RowHeight="66"
               x:Name="ListViewWeather">
         <ListView.SeparatorColor>
             <OnPlatform x:TypeArguments="Color" iOS="Transparent"/>
@@ -33,19 +34,3 @@
         </ListView.ItemTemplate>
     </ListView>
 </ContentPage>
-    
-        
-
-
-    
-
-    
-
-
-
-
-
-
-
-
-<!---->

@@ -19,7 +19,7 @@ namespace MyWeather
                     new ForecastView()
                 }
             };
-            
+
             MainPage = new NavigationPage(tabs)
             {
                 BarBackgroundColor = Color.FromHex("3498db"),

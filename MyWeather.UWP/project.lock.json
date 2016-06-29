@@ -1816,7 +1816,7 @@
           "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.1.110-pre1": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -1830,12 +1830,19 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
-      "Xamarin.Insights/1.12.3": {
+      "Xamarin.Forms.CarouselView/2.3.0-pre1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.42-pre3"
+        },
         "compile": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         },
         "runtime": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         }
       }
     },
@@ -3514,7 +3521,7 @@
           "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.1.110-pre1": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -3528,12 +3535,19 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
-      "Xamarin.Insights/1.12.3": {
+      "Xamarin.Forms.CarouselView/2.3.0-pre1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.42-pre3"
+        },
         "compile": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         },
         "runtime": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         }
       }
     },
@@ -5170,7 +5184,7 @@
           "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.1.110-pre1": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -5184,12 +5198,19 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
-      "Xamarin.Insights/1.12.3": {
+      "Xamarin.Forms.CarouselView/2.3.0-pre1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.42-pre3"
+        },
         "compile": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         },
         "runtime": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         }
       }
     },
@@ -6876,7 +6897,7 @@
           "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.1.110-pre1": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -6890,12 +6911,19 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
-      "Xamarin.Insights/1.12.3": {
+      "Xamarin.Forms.CarouselView/2.3.0-pre1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.42-pre3"
+        },
         "compile": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         },
         "runtime": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         }
       }
     },
@@ -8532,7 +8560,7 @@
           "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.1.110-pre1": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -8546,12 +8574,19 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
-      "Xamarin.Insights/1.12.3": {
+      "Xamarin.Forms.CarouselView/2.3.0-pre1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.42-pre3"
+        },
         "compile": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         },
         "runtime": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         }
       }
     },
@@ -10238,7 +10273,7 @@
           "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.1.110-pre1": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -10252,12 +10287,19 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
-      "Xamarin.Insights/1.12.3": {
+      "Xamarin.Forms.CarouselView/2.3.0-pre1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.42-pre3"
+        },
         "compile": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         },
         "runtime": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         }
       }
     },
@@ -11894,7 +11936,7 @@
           "lib/UAP10/Plugin.TextToSpeech.dll": {}
         }
       },
-      "Xamarin.Forms/2.2.0.31": {
+      "Xamarin.Forms/2.3.1.110-pre1": {
         "compile": {
           "lib/uap10.0/Xamarin.Forms.Core.dll": {},
           "lib/uap10.0/Xamarin.Forms.Platform.UAP.dll": {},
@@ -11908,12 +11950,19 @@
           "lib/uap10.0/Xamarin.Forms.Xaml.dll": {}
         }
       },
-      "Xamarin.Insights/1.12.3": {
+      "Xamarin.Forms.CarouselView/2.3.0-pre1": {
+        "dependencies": {
+          "Xamarin.Forms": "2.3.0.42-pre3"
+        },
         "compile": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         },
         "runtime": {
-          "lib/windows8/Xamarin.Insights.dll": {}
+          "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll": {},
+          "lib/uap10.0/Xamarin.Forms.CarouselView.dll": {}
         }
       }
     }
@@ -15565,11 +15614,11 @@
         "package/services/metadata/core-properties/a5c490c3fca848ceb7d3e4d05802364e.psmdcp"
       ]
     },
-    "Xamarin.Forms/2.2.0.31": {
-      "sha512": "UQ3Km0Lway+n0b9lfZczE+sPtRzMyY9oJHCKSSjsoTeEOiZfQkBDIcL7SzNYEdBCFaU9He4lnASgfRD6yHdEtg==",
+    "Xamarin.Forms/2.3.1.110-pre1": {
+      "sha512": "oEP5ioKDucTBrAnfEE817qnhGvgcTVPJwjgCrxQV6GKq2fCFBeQXOVkqucVerIlOMorH6NeV2Tu2Z0AjbMEDlQ==",
       "type": "package",
       "files": [
-        "Xamarin.Forms.2.2.0.31.nupkg.sha512",
+        "Xamarin.Forms.2.3.1.110-pre1.nupkg.sha512",
         "Xamarin.Forms.nuspec",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.Decompiler.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/ICSharpCode.NRefactory.CSharp.dll",
@@ -15600,11 +15649,13 @@
         "lib/MonoTouch10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoTouch10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoTouch10/Xamarin.Forms.Core.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Core.dll.mdb",
         "lib/MonoTouch10/Xamarin.Forms.Core.pdb",
         "lib/MonoTouch10/Xamarin.Forms.Core.xml",
         "lib/MonoTouch10/Xamarin.Forms.Platform.dll",
         "lib/MonoTouch10/Xamarin.Forms.Platform.iOS.Classic.dll",
         "lib/MonoTouch10/Xamarin.Forms.Xaml.dll",
+        "lib/MonoTouch10/Xamarin.Forms.Xaml.dll.mdb",
         "lib/MonoTouch10/Xamarin.Forms.Xaml.pdb",
         "lib/MonoTouch10/Xamarin.Forms.Xaml.xml",
         "lib/MonoTouch10/ar/Xamarin.Forms.Platform.iOS.Classic.resources.dll",
@@ -15655,12 +15706,15 @@
         "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll.mdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.xml",
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.dll.mdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Platform.iOS.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.dll.mdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
         "lib/Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
         "lib/Xamarin.iOS10/ar/Xamarin.Forms.Platform.iOS.resources.dll",
@@ -15700,11 +15754,14 @@
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.dll.mdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Core.xml",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Platform.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Platform.dll.mdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Platform.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.dll.mdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.pdb",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.Xaml.xml",
         "lib/uap10.0/Design/Xamarin.Forms.Core.Design.dll",
@@ -15760,38 +15817,44 @@
         "lib/wpa81/Xamarin.Forms.Xaml.xml"
       ]
     },
-    "Xamarin.Insights/1.12.3": {
-      "sha512": "VQXgvnpsmQbyldn8p9hrS8wcuY+mfy8Erq0yKIH5a0lW03493/UMNQLMUtfxRrff0poKIAydigZS/R2x6NXyUw==",
+    "Xamarin.Forms.CarouselView/2.3.0-pre1": {
+      "sha512": "csg6OVtNo4Vo1sOcpRJQy2r/D7mKesPOi/Lx+IJOr4xbJ+NQvKc8WleAeusoQpUVUVc7yO+7zK/2haLmhcVuEQ==",
       "type": "package",
       "files": [
-        "ThirdPartyNotices.txt",
-        "Xamarin.Insights.1.12.3.nupkg.sha512",
-        "Xamarin.Insights.nuspec",
-        "build/MonoAndroid10/Xamarin.Insights.Build.Task.dll",
-        "build/MonoAndroid10/Xamarin.Insights.targets",
-        "build/Xamarin.iOS10/Xamarin.Insights.Build.Task.dll",
-        "build/Xamarin.iOS10/Xamarin.Insights.targets",
-        "build/portable-win+net40/Xamarin.Insights.Build.Task.dll",
-        "build/portable-win+net40/Xamarin.Insights.targets",
-        "build/portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10/Xamarin.Insights.Build.Task.dll",
-        "build/portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10/Xamarin.Insights.targets",
-        "build/windows8/Xamarin.Insights.Build.Task.dll",
-        "build/windows8/Xamarin.Insights.targets",
-        "build/wpa/Xamarin.Insights.Build.Task.dll",
-        "build/wpa/Xamarin.Insights.targets",
-        "lib/MonoAndroid10/Xamarin.Insights.XML",
-        "lib/MonoAndroid10/Xamarin.Insights.dll",
-        "lib/Xamarin.iOS10/PLCrashReporterUnifiedBinding.dll",
-        "lib/Xamarin.iOS10/Xamarin.Insights.XML",
-        "lib/Xamarin.iOS10/Xamarin.Insights.dll",
-        "lib/net40/Xamarin.Insights.XML",
-        "lib/net40/Xamarin.Insights.dll",
-        "lib/portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10/Xamarin.Insights.XML",
-        "lib/portable-win+net45+wp80+windows8+wpa+MonoAndroid10+MonoTouch10/Xamarin.Insights.dll",
-        "lib/windows8/Xamarin.Insights.XML",
-        "lib/windows8/Xamarin.Insights.dll",
-        "lib/wpa/Xamarin.Insights.XML",
-        "lib/wpa/Xamarin.Insights.dll"
+        "Xamarin.Forms.CarouselView.2.3.0-pre1.nupkg.sha512",
+        "Xamarin.Forms.CarouselView.nuspec",
+        "build/win81/ARM/Xamarin.Forms.CarouselView.WinRT.Tablet.dll",
+        "build/win81/ARM/Xamarin.Forms.CarouselView.WinRT.Tablet.pri",
+        "build/win81/Xamarin.Forms.CarouselView.targets",
+        "build/win81/x64/Xamarin.Forms.CarouselView.WinRT.Tablet.dll",
+        "build/win81/x64/Xamarin.Forms.CarouselView.WinRT.Tablet.pri",
+        "build/win81/x86/Xamarin.Forms.CarouselView.WinRT.Tablet.dll",
+        "build/win81/x86/Xamarin.Forms.CarouselView.WinRT.Tablet.pri",
+        "lib/MonoAndroid10/Xamarin.Forms.CarouselView.Android.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.CarouselView.Platform.dll",
+        "lib/MonoAndroid10/Xamarin.Forms.CarouselView.dll",
+        "lib/MonoTouch10/Xamarin.Forms.CarouselView.Platform.dll",
+        "lib/MonoTouch10/Xamarin.Forms.CarouselView.dll",
+        "lib/MonoTouch10/Xamarin.Forms.CarouselView.iOS.dll",
+        "lib/WP80/Xamarin.Forms.CarouselView.Platform.dll",
+        "lib/WP80/Xamarin.Forms.CarouselView.WP8.dll",
+        "lib/WP80/Xamarin.Forms.CarouselView.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.CarouselView.Platform.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.CarouselView.dll",
+        "lib/Xamarin.iOS10/Xamarin.Forms.CarouselView.iOS.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.CarouselView.Platform.dll",
+        "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Xamarin.Forms.CarouselView.dll",
+        "lib/uap10.0/Xamarin.Forms.CarouselView.Platform.dll",
+        "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.dll",
+        "lib/uap10.0/Xamarin.Forms.CarouselView.UWP.pri",
+        "lib/uap10.0/Xamarin.Forms.CarouselView.dll",
+        "lib/win81/Xamarin.Forms.CarouselView.Platform.dll",
+        "lib/win81/Xamarin.Forms.CarouselView.WinRT.Tablet.dll",
+        "lib/win81/Xamarin.Forms.CarouselView.dll",
+        "lib/wpa81/Xamarin.Forms.CarouselView.Platform.dll",
+        "lib/wpa81/Xamarin.Forms.CarouselView.WinRT.Phone.dll",
+        "lib/wpa81/Xamarin.Forms.CarouselView.WinRT.Phone.pri",
+        "lib/wpa81/Xamarin.Forms.CarouselView.dll"
       ]
     }
   },
@@ -15802,8 +15865,8 @@
       "Xam.Plugin.Geolocator >= 3.0.4",
       "Xam.Plugins.Settings >= 2.1.0",
       "Xam.Plugins.TextToSpeech >= 2.0.0",
-      "Xamarin.Forms >= 2.2.0.31",
-      "Xamarin.Insights >= 1.12.3"
+      "Xamarin.Forms >= 2.3.1.110-pre1",
+      "Xamarin.Forms.CarouselView >= 2.3.0-pre1"
     ],
     "UAP,Version=v10.0": []
   }

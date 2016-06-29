@@ -2,7 +2,12 @@
     x:Class="MyWeather.UWP.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:uwp="using:Xamarin.Forms.Platform"
     xmlns:local="using:MyWeather.UWP"
     RequestedTheme="Light">
-
+    <Application.Resources>
+        <DataTemplate x:Key="ItemTemplate">
+            <uwp:ItemControl HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" />
+        </DataTemplate>
+    </Application.Resources>
 </Application>

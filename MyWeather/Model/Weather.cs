@@ -4,6 +4,8 @@ using System.Collections.Generic;
 
 namespace MyWeather.Models
 {
+
+
     public class Coord
     {
         [JsonProperty("lon")]
@@ -116,7 +118,7 @@ namespace MyWeather.Models
         [JsonProperty("cnt")]
         public int Cnt { get; set; }
         [JsonProperty("list")]
-        public List<WeatherRoot> Items { get; set; }
+        public List<WeatherRoot> Items { get; set; } = new List<WeatherRoot>();
 
     }
 

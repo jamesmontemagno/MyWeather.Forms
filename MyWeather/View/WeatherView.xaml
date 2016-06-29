@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyWeather.View.WeatherView"
+             xmlns:effects="clr-namespace:MyWeather.Effects;assembly=MyWeather"
+             xmlns:cv="clr-namespace:Xamarin.Forms;assembly=Xamarin.Forms.CarouselView"
              Title="Weather">
     <StackLayout Padding="10" Spacing="10">
         <Entry Text="{Binding Location}">
@@ -18,7 +20,31 @@
             <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
             <Switch IsToggled="{Binding UseGPS}"/>
         </StackLayout>
-        
+        <cv:CarouselView  ItemsSource="{Binding Forecast}" HeightRequest="200">
+        <cv:CarouselView.ItemTemplate>
+          <DataTemplate>
+            <StackLayout Padding="4">
+              <Frame>
+              <Frame.HasShadow>
+                <OnPlatform x:TypeArguments="x:Boolean" iOS="false" Android="true"/>
+              </Frame.HasShadow>
+                <StackLayout Orientation="Horizontal" Padding="4">
+                  <Image HeightRequest="44"
+                         WidthRequest="44"
+                         Source="{Binding DisplayIcon}"/>
+                  <StackLayout Padding="10" Spacing="5">
+                    <Label Text="{Binding DisplayTemp}"
+                           TextColor="#3498db"
+                           Style="{DynamicResource ListItemTextStyle}"/>
+                    <Label Text="{Binding DisplayDate}"
+                           Style="{DynamicResource ListItemDetailTextStyle}"/>
+                  </StackLayout>
+                </StackLayout>
+              </Frame>
+            </StackLayout>
+          </DataTemplate>
+        </cv:CarouselView.ItemTemplate>
+      </cv:CarouselView>
         <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
         <Label Text="{Binding Temp}" FontSize="24"/>
         <Label Text="{Binding Condition}"/>
