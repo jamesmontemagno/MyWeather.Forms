@@ -6,7 +6,6 @@ namespace MyWeather.UWP
         public MainPage()
         {
             InitializeComponent();
-            Xamarin.Insights.Initialize(Xamarin.Insights.DebugModeKey);
             LoadApplication(new MyWeather.App());
         }
     }

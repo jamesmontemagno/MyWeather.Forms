@@ -25,7 +25,6 @@ namespace MyWeather.Droid
 		    base.OnCreate (bundle);
 
 		    Forms.Init(this, bundle);
-		    Xamarin.Insights.Initialize(Xamarin.Insights.DebugModeKey, this);
 		
 		    LoadApplication(new App());
 		}

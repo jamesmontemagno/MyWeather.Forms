@@ -1,5 +1,4 @@
-﻿using Plugin.Geolocator;
-using MyWeather.Helpers;
+﻿using MyWeather.Helpers;
 using MyWeather.Models;
 using MyWeather.Services;
 using System;
@@ -103,17 +102,10 @@ namespace MyWeather.ViewModels
                 var units = IsImperial ? Units.Imperial : Units.Metric;
                
 
-                if (UseGPS)
-                {
-                    //Get weather by GPS
-                    var local = await CrossGeolocator.Current.GetPositionAsync(10000);
-                    weatherRoot = await WeatherService.GetWeather(local.Latitude, local.Longitude, units);
-                }
-                else
-                {
-                    //Get weather by city
-                    weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
-                }
+                
+                //Get weather by city
+                weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
+                
 
                 //Get forecast based on cityId
                 Forecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
@@ -126,7 +118,6 @@ namespace MyWeather.ViewModels
             catch (Exception ex)
             {
                 Temp = "Unable to get Weather";
-                Xamarin.Insights.Report(ex);
             }
             finally
             {
