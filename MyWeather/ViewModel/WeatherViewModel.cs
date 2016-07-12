@@ -1,4 +1,4 @@
-﻿using MyWeather.Helpers;
+using MyWeather.Helpers;
 using MyWeather.Models;
 using MyWeather.Services;
 using System;
@@ -7,6 +7,8 @@ using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
+using Plugin.TextToSpeech;
+using Plugin.Geolocator;
 
 namespace MyWeather.ViewModels
 {
@@ -102,9 +104,17 @@ namespace MyWeather.ViewModels
                 var units = IsImperial ? Units.Imperial : Units.Metric;
                
 
-                
-                //Get weather by city
-                weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
+                if (UseGPS)
+                {
+					
+                    var gps = await CrossGeolocator.Current.GetPositionAsync(10000);
+                    weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
+                }
+                else
+                {
+                    //Get weather by city
+                    weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
+                }
                 
 
                 //Get forecast based on cityId
@@ -113,7 +123,7 @@ namespace MyWeather.ViewModels
                 var unit = IsImperial ? "F" : "C";
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
-
+                CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
             }
             catch (Exception ex)
             {
