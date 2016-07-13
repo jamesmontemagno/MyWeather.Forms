@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWeather.View.WeatherView"
+             xmlns:rotate="clr-namespace:Syncfusion.SfRotator.XForms;assembly=Syncfusion.SfRotator.XForms"
+             xmlns:gauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
+             xmlns:pull="clr-namespace:Syncfusion.SfPullToRefresh.XForms;assembly=Syncfusion.SfPullToRefresh.XForms"
+             Title="Weather">
+  <Grid>
+    <StackLayout Padding="10" Spacing="10" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+      <Entry Text="{Binding Location}">
+        <Entry.Triggers>
+          <DataTrigger TargetType="Entry"
+                       Binding="{Binding UseGPS}"
+                       Value="true">
+            <Setter Property="IsEnabled" Value="false"/>
+          </DataTrigger>
+        </Entry.Triggers>
+      </Entry>
+
+      <StackLayout Orientation="Horizontal" Spacing="10">
+        <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        <Switch IsToggled="{Binding UseGPS}"/>
+      </StackLayout>
+
+      <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
+
+      <Grid ColumnSpacing="10">
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width=".4*"/>
+          <ColumnDefinition Width=".6*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackLayout Grid.ColumnSpan="2">
+          <Label Text="{Binding Temp}" FontSize="24"/>
+          <Label Text="{Binding Condition}"/>
+        </StackLayout>
+        <gauge:SfLinearGauge
+                Grid.Row="1"
+                Grid.Column="0"
+                Orientation="OrientationVertical">
+          <gauge:SfLinearGauge.BackgroundColor>
+            <OnPlatform x:TypeArguments="Color" iOS="White" Android="Transparent" WinPhone="White"/>
+          </gauge:SfLinearGauge.BackgroundColor>
+          <gauge:SfLinearGauge.Scales>
+            <gauge:LinearScale MinimumValue="0" MaximumValue="100" ScaleBarLength="100" ScaleBarColor="#EDEDED" LabelPostfix="%" LabelColor="#545454" MinorTicksPerInterval="1" ScaleBarSize="20" >
+              <gauge:LinearScale.Pointers>
+                <gauge:BarPointer Value="{Binding Humidity}" x:Name="barPointer" Color="Red" Thickness="10"/>
+              </gauge:LinearScale.Pointers>
+              <gauge:LinearScale.MinorTickSettings>
+                <gauge:LinearTickSettings Length="10" Color="#4B4B4B" Thickness="1" />
+              </gauge:LinearScale.MinorTickSettings>
+              <gauge:LinearScale.MajorTickSettings>
+                <gauge:LinearTickSettings Length="10" Color="#4B4B4B" Thickness="1" />
+              </gauge:LinearScale.MajorTickSettings>
+          </gauge:LinearScale>
+          </gauge:SfLinearGauge.Scales>
+        </gauge:SfLinearGauge>
+
+        <gauge:SfCircularGauge
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalOptions="Start"
+                x:Name="circularGauge">
+          <gauge:SfCircularGauge.GaugeType>
+            <OnPlatform x:TypeArguments="gauge:GaugeType" iOS="Default" Android="East" WinPhone="East"/>
+          </gauge:SfCircularGauge.GaugeType>
+          <gauge:SfCircularGauge.Scales>
+            <gauge:Scale StartValue="0" x:Name="scale"
+                         EndValue="120"
+                         Interval="10"
+                         StartAngle="135"
+                         SweepAngle="270"
+                         RimThickness="5"
+                         RimColor="#d14646"
+                         LabelColor="Gray">
+              <gauge:Scale.Pointers>
+                <gauge:NeedlePointer
+                  Value="{Binding TempValue}"
+                  KnobRadius="5"
+                  Color     ="Gray"
+                  KnobColor="#2bbfb8"
+                  LengthFactor="0.8"
+                  Type="Bar">
+                </gauge:NeedlePointer>
+                <gauge:RangePointer
+                  Value="50"
+                  Color="#2bbfb8"
+                  Thickness="5">
+                </gauge:RangePointer>
+              </gauge:Scale.Pointers>
+              <gauge:Scale.MajorTickSettings>
+                <gauge:TickSettings x:Name="major"
+                  Length="6"
+                  Color ="#444444"
+                  Thickness="2">
+                </gauge:TickSettings>
+              </gauge:Scale.MajorTickSettings>
+            </gauge:Scale>
+          </gauge:SfCircularGauge.Scales>
+        </gauge:SfCircularGauge>
+
+      </Grid>
+    </StackLayout>
+    <StackLayout 
+      HorizontalOptions="FillAndExpand"
+      VerticalOptions="FillAndExpand"
+      BackgroundColor="#80ffffff"
+      IsVisible="{Binding IsBusy}">
+      <busyindicator:SfBusyIndicator
+      HorizontalOptions="FillAndExpand"
+      VerticalOptions="FillAndExpand"
+        IsBusy="{Binding IsBusy}"
+        IsVisible="{Binding IsBusy}"
+        AnimationType="MovieTimer"
+        Title="Loading..."
+        TextColor="Red"
+        TextSize="40"
+        ViewBoxWidth="300"
+        ViewBoxHeight="300"/>
+    </StackLayout>
+  </Grid>
+</ContentPage>
+
+
+
+
+
+
+
+
+

@@ -23,6 +23,18 @@ namespace MyWeather.iOS
             });
             Forms.Init();
 
+            new Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator();
+            new Syncfusion.SfBusyIndicator.XForms.iOS.SfBusyIndicatorRenderer();
+            new Syncfusion.SfBusyIndicator.iOS.SFBusyIndicator();
+            new Syncfusion.SfCalendar.iOS.SFCalendar();
+            new Syncfusion.SfCalendar.XForms.SfCalendar();
+            new Syncfusion.SfCalendar.XForms.iOS.SfCalendarRenderer();
+            new Syncfusion.SfGauge.iOS.SFLinearGauge();
+            new Syncfusion.SfGauge.XForms.SfLinearGauge();
+            new Syncfusion.SfGauge.XForms.iOS.SfLinearGaugeRenderer();
+            new Syncfusion.SfGauge.XForms.iOS.SfGaugeRenderer();
+            new Syncfusion.SfGauge.XForms.iOS.SfDigitalGaugeRenderer();
+
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);

@@ -25,8 +25,11 @@ namespace MyWeather.Droid
 		    base.OnCreate (bundle);
 
 		    Forms.Init(this, bundle);
-		
-		    LoadApplication(new App());
+
+            new Syncfusion.SfBusyIndicator.XForms.SfBusyIndicator();
+            new Syncfusion.SfCalendar.XForms.SfCalendar();
+            new Syncfusion.SfGauge.XForms.SfLinearGauge();
+            LoadApplication(new App());
 		}
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)

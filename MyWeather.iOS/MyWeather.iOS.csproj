@@ -104,6 +104,42 @@
       <HintPath>..\packages\Xam.Plugins.TextToSpeech.2.0.0\lib\Xamarin.iOS10\Plugin.TextToSpeech.Abstractions.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Syncfusion.SfBusyIndicator.iOS, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfBusyIndicator.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfBusyIndicator.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfBusyIndicator.XForms, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfBusyIndicator.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfBusyIndicator.XForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfBusyIndicator.XForms.iOS, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfBusyIndicator.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfBusyIndicator.XForms.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.iOS, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfCalendar.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.XForms, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfCalendar.XForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfCalendar.XForms.iOS, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfCalendar.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfCalendar.XForms.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfGauge.iOS, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfGauge.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfGauge.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfGauge.XForms, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfGauge.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfGauge.XForms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Syncfusion.SfGauge.XForms.iOS, Version=14.2451.0.26, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Syncfusion.Xamarin.SfGauge.14.2.0.26\lib\Xamarin.iOS10\Syncfusion.SfGauge.XForms.iOS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -211,6 +247,15 @@
     <BundleResource Include="Resources\tab2%402x.png" />
     <BundleResource Include="Resources\tab2%403x.png" />
     <BundleResource Include="Resources\tab2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab3%403x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tab3%402x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

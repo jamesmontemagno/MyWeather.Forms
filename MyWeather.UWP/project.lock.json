@@ -270,6 +270,44 @@
           "lib/portable-net45+wp80+win8+wpa81/Newtonsoft.Json.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfBusyIndicator/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfGauge/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        }
+      },
       "System.AppContext/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.0",
@@ -2099,6 +2137,44 @@
           "runtimes/win8-arm/native/mscorrc.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfBusyIndicator/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfGauge/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        }
+      },
       "System.AppContext/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.0",
@@ -3765,6 +3841,44 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfBusyIndicator/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfGauge/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -5445,6 +5559,44 @@
           "runtimes/win7-x64/native/mscorrc.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfBusyIndicator/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfGauge/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        }
+      },
       "System.AppContext/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.0",
@@ -7111,6 +7263,44 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfBusyIndicator/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfGauge/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -8791,6 +8981,44 @@
           "runtimes/win7-x86/native/mscorrc.dll": {}
         }
       },
+      "Syncfusion.Xamarin.SfBusyIndicator/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfGauge/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        }
+      },
       "System.AppContext/4.0.0": {
         "dependencies": {
           "System.Collections": "4.0.0",
@@ -10457,6 +10685,44 @@
         },
         "runtime": {
           "runtimes/win8-aot/lib/netcore50/System.Private.DataContractSerialization.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfBusyIndicator/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfCalendar/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll": {},
+          "lib/uap10.0/Syncfusion.SfInput.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfShared.UWP.dll": {}
+        }
+      },
+      "Syncfusion.Xamarin.SfGauge/14.2.0.26": {
+        "compile": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
+        },
+        "runtime": {
+          "lib/uap10.0/Syncfusion.SfGauge.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll": {},
+          "lib/uap10.0/Syncfusion.SfGauge.XForms.dll": {}
         }
       },
       "System.AppContext/4.0.0": {
@@ -12571,6 +12837,185 @@
         "runtimes/win8-arm/native/mscordbi.dll",
         "runtimes/win8-arm/native/mscorrc.debug.dll",
         "runtimes/win8-arm/native/mscorrc.dll"
+      ]
+    },
+    "Syncfusion.Xamarin.SfBusyIndicator/14.2.0.26": {
+      "sha512": "W18K+rh8vj2SLcm52xvwyw15J/AXGHPtS4Og24LVnd8LCDHSh1s1wNz9Rb79JHNQhgvotSy290GzPPYvRtq6vg==",
+      "type": "package",
+      "files": [
+        "Syncfusion.Xamarin.SfBusyIndicator.14.2.0.26.nupkg.sha512",
+        "Syncfusion.Xamarin.SfBusyIndicator.nuspec",
+        "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/WP80/Syncfusion.SfBusyIndicator.WP8.dll",
+        "lib/WP80/Syncfusion.SfBusyIndicator.XForms.WinPhone.dll",
+        "lib/WP80/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfBusyIndicator.iOS.dll",
+        "lib/portable-win+net45+wp80+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/DeviceFamily-Mobile/Themes/BusyIndicatorStyle.xaml",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/DeviceFamily-Mobile/Themes/BusyIndicatorStyle.xbf",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/Properties/Syncfusion.SfBusyIndicator.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/Syncfusion.SfBusyIndicator.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/Syncfusion.SfBusyIndicator.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/Syncfusion.SfShared.UWP.xml",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/Themes/BusyIndicatorStyle.xaml",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/Themes/BusyIndicatorStyle.xbf",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.UWP/Themes/generic.xbf",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/win81/Syncfusion.SfBusyIndicator.WinRT.dll",
+        "lib/win81/Syncfusion.SfBusyIndicator.WinRT.pri",
+        "lib/win81/Syncfusion.SfBusyIndicator.WinRT.xml",
+        "lib/win81/Syncfusion.SfBusyIndicator.WinRT/Syncfusion.SfBusyIndicator.WinRT.xml",
+        "lib/win81/Syncfusion.SfBusyIndicator.WinRT/Syncfusion.SfBusyIndicator.WinRT.xr.xml",
+        "lib/win81/Syncfusion.SfBusyIndicator.WinRT/Syncfusion.SfShared.WinRT.xml",
+        "lib/win81/Syncfusion.SfBusyIndicator.WinRT/Themes/generic.xbf",
+        "lib/win81/Syncfusion.SfBusyIndicator.XForms.WinRT.dll",
+        "lib/win81/Syncfusion.SfBusyIndicator.XForms.dll",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.WP.dll",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.WP.pri",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.WP.xml",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.WP/Syncfusion.SfBusyIndicator.WP.xml",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.WP/Syncfusion.SfBusyIndicator.WP.xr.xml",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.WP/Syncfusion.SfShared.WP.xml",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.WP/Themes/generic.xbf",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.XForms.WinPhone.dll",
+        "lib/wpa81/Syncfusion.SfBusyIndicator.XForms.dll"
+      ]
+    },
+    "Syncfusion.Xamarin.SfCalendar/14.2.0.26": {
+      "sha512": "Nli/YyygmGhdHvNzIpQtSbi7WvTWXkC8hPeab5pcI2mLwWB7QgHhqv1XG6bIEp/XDDJh0g1vAb4cARdavxLcAQ==",
+      "type": "package",
+      "files": [
+        "Syncfusion.Xamarin.SfCalendar.14.2.0.26.nupkg.sha512",
+        "Syncfusion.Xamarin.SfCalendar.nuspec",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfCalendar.XForms.dll",
+        "lib/WP80/Syncfusion.SfCalendar.XForms.WinPhone.dll",
+        "lib/WP80/Syncfusion.SfCalendar.XForms.dll",
+        "lib/WP80/Syncfusion.SfInput.WP8.dll",
+        "lib/WP80/Syncfusion.SfShared.WP8.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfCalendar.iOS.dll",
+        "lib/portable-win+net45+wp80+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Syncfusion.SfCalendar.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfCalendar.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfInput.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/DeviceFamily-Mobile/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Properties/Syncfusion.SfInput.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfInput.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Syncfusion.SfShared.UWP.xml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/InputStyles.xbf",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfInput.UWP/Themes/generic.xbf",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfShared.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Properties/Syncfusion.SfShared.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Syncfusion.SfShared.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xaml",
+        "lib/uap10.0/Syncfusion.SfShared.UWP/Themes/generic.xbf",
+        "lib/win81/Syncfusion.SfCalendar.XForms.WinRT.dll",
+        "lib/win81/Syncfusion.SfCalendar.XForms.dll",
+        "lib/win81/Syncfusion.SfInput.WinRT.dll",
+        "lib/win81/Syncfusion.SfInput.WinRT.pri",
+        "lib/win81/Syncfusion.SfInput.WinRT.xml",
+        "lib/win81/Syncfusion.SfInput.WinRT/Syncfusion.SfInput.WinRT.xml",
+        "lib/win81/Syncfusion.SfInput.WinRT/Syncfusion.SfInput.WinRT.xr.xml",
+        "lib/win81/Syncfusion.SfInput.WinRT/Syncfusion.SfShared.WinRT.xml",
+        "lib/win81/Syncfusion.SfInput.WinRT/Themes/generic.xbf",
+        "lib/win81/Syncfusion.SfShared.WinRT.dll",
+        "lib/win81/Syncfusion.SfShared.WinRT.pri",
+        "lib/win81/Syncfusion.SfShared.WinRT.xml",
+        "lib/win81/Syncfusion.SfShared.WinRT/Syncfusion.SfShared.WinRT.xml",
+        "lib/win81/Syncfusion.SfShared.WinRT/Syncfusion.SfShared.WinRT.xr.xml",
+        "lib/win81/Syncfusion.SfShared.WinRT/Themes/generic.xbf",
+        "lib/wpa81/Syncfusion.SfCalendar.XForms.WinPhone.dll",
+        "lib/wpa81/Syncfusion.SfCalendar.XForms.dll",
+        "lib/wpa81/Syncfusion.SfInput.WP.dll",
+        "lib/wpa81/Syncfusion.SfInput.WP.pri",
+        "lib/wpa81/Syncfusion.SfInput.WP.xml",
+        "lib/wpa81/Syncfusion.SfInput.WP/Syncfusion.SfInput.WP.xml",
+        "lib/wpa81/Syncfusion.SfInput.WP/Syncfusion.SfInput.WP.xr.xml",
+        "lib/wpa81/Syncfusion.SfInput.WP/Syncfusion.SfShared.WP.xml",
+        "lib/wpa81/Syncfusion.SfInput.WP/Themes/generic.xbf",
+        "lib/wpa81/Syncfusion.SfShared.WP.dll",
+        "lib/wpa81/Syncfusion.SfShared.WP.pri",
+        "lib/wpa81/Syncfusion.SfShared.WP.xml",
+        "lib/wpa81/Syncfusion.SfShared.WP/Syncfusion.SfShared.WP.xml",
+        "lib/wpa81/Syncfusion.SfShared.WP/Syncfusion.SfShared.WP.xr.xml",
+        "lib/wpa81/Syncfusion.SfShared.WP/Themes/generic.xbf"
+      ]
+    },
+    "Syncfusion.Xamarin.SfGauge/14.2.0.26": {
+      "sha512": "7qU2DMqoGV8urzzKzk28ijHMzOO1hy3Bw+uKD77o3H1YP+M4U7gyLB9tjGv1hobGgGB4FGzYOAS7cKqvaUw9CQ==",
+      "type": "package",
+      "files": [
+        "Syncfusion.Xamarin.SfGauge.14.2.0.26.nupkg.sha512",
+        "Syncfusion.Xamarin.SfGauge.nuspec",
+        "lib/MonoAndroid10/Syncfusion.SfGauge.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfGauge.XForms.Android.dll",
+        "lib/MonoAndroid10/Syncfusion.SfGauge.XForms.dll",
+        "lib/WP80/Syncfusion.SfGauge.WP8.dll",
+        "lib/WP80/Syncfusion.SfGauge.XForms.WinPhone.dll",
+        "lib/WP80/Syncfusion.SfGauge.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfGauge.XForms.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfGauge.XForms.iOS.dll",
+        "lib/Xamarin.iOS10/Syncfusion.SfGauge.iOS.dll",
+        "lib/portable-win+net45+wp80+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10/Syncfusion.SfGauge.XForms.dll",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP.pri",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/CircularGauge/Themes/CircularGauge.xaml",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/CircularGauge/Themes/CircularGauge.xbf",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/DigitalGauge/Themes/DigitalGauge.xaml",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/DigitalGauge/Themes/DigitalGauge.xbf",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/LinearGauge/Themes/LinearGauge.xaml",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/LinearGauge/Themes/LinearGauge.xbf",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/Properties/Syncfusion.SfGauge.UWP.rd.xml",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/Syncfusion.SfGauge.UWP.XML",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/Syncfusion.SfGauge.UWP.xr.xml",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/Themes/Generic.xaml",
+        "lib/uap10.0/Syncfusion.SfGauge.UWP/Themes/Generic.xbf",
+        "lib/uap10.0/Syncfusion.SfGauge.XForms.UWP.dll",
+        "lib/uap10.0/Syncfusion.SfGauge.XForms.dll",
+        "lib/win81/Syncfusion.SfGauge.WinRT.dll",
+        "lib/win81/Syncfusion.SfGauge.WinRT.pri",
+        "lib/win81/Syncfusion.SfGauge.WinRT.xml",
+        "lib/win81/Syncfusion.SfGauge.WinRT/CircularGauge/Themes/CircularGauge.xbf",
+        "lib/win81/Syncfusion.SfGauge.WinRT/DigitalGauge/Themes/DigitalGauge.xbf",
+        "lib/win81/Syncfusion.SfGauge.WinRT/LinearGauge/Themes/LinearGauge.xbf",
+        "lib/win81/Syncfusion.SfGauge.WinRT/Syncfusion.SfGauge.WinRT.xml",
+        "lib/win81/Syncfusion.SfGauge.WinRT/Syncfusion.SfGauge.WinRT.xr.xml",
+        "lib/win81/Syncfusion.SfGauge.WinRT/Themes/Generic.xbf",
+        "lib/win81/Syncfusion.SfGauge.XForms.WinRT.dll",
+        "lib/win81/Syncfusion.SfGauge.XForms.dll",
+        "lib/wpa81/Syncfusion.SfGauge.WP.dll",
+        "lib/wpa81/Syncfusion.SfGauge.WP.pri",
+        "lib/wpa81/Syncfusion.SfGauge.WP.xml",
+        "lib/wpa81/Syncfusion.SfGauge.WP/CircularGauge/Themes/CircularGauge.xbf",
+        "lib/wpa81/Syncfusion.SfGauge.WP/DigitalGauge/Themes/DigitalGauge.xbf",
+        "lib/wpa81/Syncfusion.SfGauge.WP/LinearGauge/Themes/LinearGauge.xbf",
+        "lib/wpa81/Syncfusion.SfGauge.WP/Syncfusion.SfGauge.WP.xml",
+        "lib/wpa81/Syncfusion.SfGauge.WP/Syncfusion.SfGauge.WP.xr.xml",
+        "lib/wpa81/Syncfusion.SfGauge.WP/Themes/Generic.xbf",
+        "lib/wpa81/Syncfusion.SfGauge.XForms.WinPhone.dll",
+        "lib/wpa81/Syncfusion.SfGauge.XForms.dll"
       ]
     },
     "System.AppContext/4.0.0": {
@@ -15711,6 +16156,9 @@
     "": [
       "Microsoft.NETCore.UniversalWindowsPlatform >= 5.1.0",
       "Newtonsoft.Json >= 9.0.1",
+      "Syncfusion.Xamarin.SfBusyIndicator >= 14.2.0.26",
+      "Syncfusion.Xamarin.SfCalendar >= 14.2.0.26",
+      "Syncfusion.Xamarin.SfGauge >= 14.2.0.26",
       "Xam.Plugin.Geolocator >= 3.0.4",
       "Xam.Plugins.Settings >= 2.1.0",
       "Xam.Plugins.TextToSpeech >= 2.0.0",

@@ -1,7 +1,9 @@
 ﻿using MyWeather.Helpers;
 using MyWeather.Models;
 using MyWeather.Services;
+using Plugin.Geolocator;
 using System;
+using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -13,6 +15,11 @@ namespace MyWeather.ViewModels
     public class WeatherViewModel : INotifyPropertyChanged
     {
         WeatherService WeatherService { get; } = new WeatherService();
+
+        public WeatherViewModel()
+        {
+            
+        }
 
         string location = Settings.City;
         public string Location
@@ -61,6 +68,20 @@ namespace MyWeather.ViewModels
             set { temp = value; OnPropertyChanged(); }
         }
 
+        double tempValue = 0;
+        public double TempValue
+        {
+            get { return tempValue; }
+            set { tempValue = value; OnPropertyChanged(); }
+        }
+
+        double humidity = 0;
+        public double Humidity
+        {
+            get { return humidity; }
+            set { humidity = value; OnPropertyChanged(); }
+        }
+
         string condition = string.Empty;
         public string Condition
         {
@@ -77,8 +98,8 @@ namespace MyWeather.ViewModels
             set { isBusy = value; OnPropertyChanged(); }
         }
 
-        WeatherForecastRoot forecast;
-        public WeatherForecastRoot Forecast
+        ObservableCollection<WeatherRoot> forecast = new ObservableCollection<WeatherRoot>();
+        public ObservableCollection<WeatherRoot> Forecast
         {
             get { return forecast; }
             set { forecast = value; OnPropertyChanged(); }
@@ -100,17 +121,34 @@ namespace MyWeather.ViewModels
             {
                 WeatherRoot weatherRoot = null;
                 var units = IsImperial ? Units.Imperial : Units.Metric;
-               
 
-                
+                if (UseGPS)
+                {
+
+                    var gps = await CrossGeolocator.Current.GetPositionAsync(10000);
+                    weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
+                }
+                else
+                {
+                    //Get weather by city
+                    weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
+                }
+
                 //Get weather by city
                 weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
-                
+
+
+                await Task.Delay(5000);
 
                 //Get forecast based on cityId
-                Forecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
+                var fullForecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
+                Forecast.Clear();
+                foreach (var item in fullForecast.Items)
+                    Forecast.Add(item);
 
                 var unit = IsImperial ? "F" : "C";
+                TempValue = weatherRoot?.MainWeather?.Temperature ?? 0;
+                Humidity = weatherRoot?.MainWeather?.Humidity ?? 0;
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
 

@@ -9,14 +9,17 @@ namespace MyWeather
     {
         public App()
         {
+
+
             var tabs = new TabbedPage
             {
-                Title ="My Weather",
+                Title = "My Weather",
                 BindingContext = new WeatherViewModel(),
                 Children =
                 {
                     new WeatherView(),
-                    new ForecastView()
+                    new ForecastView(),
+                    new WeatherCalendar()
                 }
             };
             
