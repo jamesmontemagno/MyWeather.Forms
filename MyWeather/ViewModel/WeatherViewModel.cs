@@ -2,9 +2,11 @@
 using MyWeather.Models;
 using MyWeather.Services;
 using Plugin.Geolocator;
+using Syncfusion.SfCalendar.XForms;
 using System;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -134,11 +136,9 @@ namespace MyWeather.ViewModels
                     weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
                 }
 
-                //Get weather by city
-                weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
+                
 
-
-                await Task.Delay(5000);
+                await Task.Delay(500);
 
                 //Get forecast based on cityId
                 var fullForecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
@@ -152,6 +152,8 @@ namespace MyWeather.ViewModels
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
 
+                UpdateCalendar();
+
             }
             catch (Exception ex)
             {
@@ -162,6 +164,24 @@ namespace MyWeather.ViewModels
                 IsBusy = false;
             }
         }
+
+
+        public CalendarEventCollection CalEvents { get; set; } = new CalendarEventCollection();
+
+        void UpdateCalendar()
+        {
+            var events = Forecast.Select(i => new CalendarInlineEvent
+            {
+                StartTime = DateTime.Parse(i.Date).ToLocalTime(),
+                EndTime = DateTime.Parse(i.Date).AddHours(3).ToLocalTime(),
+                Subject = i.DisplayTemp,
+                Color = i.MainWeather.Temperature > 80 ? Color.Red : (i.MainWeather.Temperature > 60 ? Color.Yellow : Color.Blue)
+            });
+            CalEvents.Clear();
+            foreach (var ev in events)
+                CalEvents.Add(ev);
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
 

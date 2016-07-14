@@ -20,6 +20,7 @@ namespace MyWeather
                     new WeatherView(),
                     new ForecastView(),
                     new WeatherCalendar()
+                    
                 }
             };
             
