@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWeather.Cell.RainDataTemplate">
+  <Grid RowSpacing="5" ColumnSpacing="10" Padding="5" BackgroundColor="#3498db">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="44"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="*"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <Image HeightRequest="44"
+           WidthRequest="44"
+           Source="{Binding DisplayIcon}"
+           Grid.RowSpan="2"
+           Grid.Column="1"/>
+
+    <Label  VerticalOptions="End"
+            HorizontalTextAlignment="End"
+            Text="{Binding DisplayTemp}"
+            TextColor="White"
+            Style="{DynamicResource ListItemTextStyle}"/>
+    <Label Grid.Row="1"
+           VerticalOptions="Start"
+           HorizontalTextAlignment="End"
+           TextColor="White"
+           Text="{Binding DisplayDate}"
+           Style="{DynamicResource ListItemDetailTextStyle}"/>
+  </Grid>
+</ViewCell>

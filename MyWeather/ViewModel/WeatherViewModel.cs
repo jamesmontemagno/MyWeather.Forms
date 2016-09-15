@@ -9,6 +9,8 @@ using System.Windows.Input;
 using Xamarin.Forms;
 using Plugin.TextToSpeech;
 using Plugin.Geolocator;
+using System.Collections.ObjectModel;
+using MvvmHelpers;
 
 namespace MyWeather.ViewModels
 {
@@ -79,8 +81,8 @@ namespace MyWeather.ViewModels
             set { isBusy = value; OnPropertyChanged(); }
         }
 
-        WeatherForecastRoot forecast;
-        public WeatherForecastRoot Forecast
+        ObservableRangeCollection<WeatherRoot> forecast = new ObservableRangeCollection<WeatherRoot>();
+        public ObservableRangeCollection<WeatherRoot> ForecastItems
         {
             get { return forecast; }
             set { forecast = value; OnPropertyChanged(); }
@@ -102,8 +104,8 @@ namespace MyWeather.ViewModels
             {
                 WeatherRoot weatherRoot = null;
                 var units = IsImperial ? Units.Imperial : Units.Metric;
-               
 
+                ForecastItems.Clear();
                 if (UseGPS)
                 {
 					
@@ -118,12 +120,13 @@ namespace MyWeather.ViewModels
                 
 
                 //Get forecast based on cityId
-                Forecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
+                var f = await WeatherService.GetForecast(weatherRoot, units);
+                foreach (var item in f.Items)
+                    ForecastItems.(item);
 
                 var unit = IsImperial ? "F" : "C";
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
-                CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
             }
             catch (Exception ex)
             {

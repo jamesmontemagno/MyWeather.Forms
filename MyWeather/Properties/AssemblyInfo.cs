@@ -11,7 +11,6 @@ using Xamarin.Forms.Xaml;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
 

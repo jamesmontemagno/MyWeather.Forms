@@ -3,8 +3,59 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyWeather.View.WeatherView"
              Title="Weather">
-    <StackLayout Padding="10" Spacing="10">
-        <Entry Text="{Binding Location}">
+  <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="Auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="*"/>
+      <ColumnDefinition Width="Auto"/>
+    </Grid.ColumnDefinitions>
+  
+      <Entry Grid.ColumnSpan="2" Text="{Binding Location}">
+            <Entry.Triggers>
+                <DataTrigger TargetType="Entry"
+                             Binding="{Binding UseGPS}"
+                             Value="true">
+                    <Setter Property="IsEnabled" Value="false"/>
+                </DataTrigger>
+            </Entry.Triggers>
+        </Entry>
+  
+        <Label Grid.Row="1" Grid.Column="0" Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        <Switch Grid.Row="1" Grid.Column="1" IsToggled="{Binding UseGPS}"/>
+        
+        <Label Grid.Row="2" Grid.Column="0" Text="Use Imperial" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        <Switch  Grid.Row="2" Grid.Column="1" IsToggled="{Binding IsImperial}"/>
+  
+        <StackLayout Grid.Row="3" Grid.ColumnSpan="2">
+        <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
+        <Label Text="{Binding Temp}" FontSize="24"/>
+        <Label Text="{Binding Condition}"/>
+      
+          <ActivityIndicator Margin="20" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
+      </StackLayout>
+</Grid>
+    
+</ContentPage>
+  
+  
+<!--
+<Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
+      <Grid.RowDefinitions>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="Auto"/>
+        <RowDefinition Height="*"/>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="Auto"/>
+      </Grid.ColumnDefinitions>
+      <Entry Text="{Binding Location}" Grid.ColumnSpan="2">
             <Entry.Triggers>
                 <DataTrigger TargetType="Entry"
                              Binding="{Binding UseGPS}"
@@ -14,17 +65,21 @@
             </Entry.Triggers>
         </Entry>
 
-        <StackLayout Orientation="Horizontal" Spacing="10">
-            <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
-            <Switch IsToggled="{Binding UseGPS}"/>
+        <Label Grid.Row="1" Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        <Switch Grid.Row="1" Grid.Column="1" IsToggled="{Binding UseGPS}"/>
+      
+        <Label Grid.Row="2" Text="Use Imperial" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        <Switch Grid.Row="2" Grid.Column="1" IsToggled="{Binding IsImperial}"/>
+    
+        <StackLayout Grid.Row="3" Grid.RowSpacing="2">
+          <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
+          <Label Text="{Binding Temp}" FontSize="24"/>
+          <Label Text="{Binding Condition}"/>
+          <ActivityIndicator Margin="0,20,0,0" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
         </StackLayout>
-        
-        <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
-        <Label Text="{Binding Temp}" FontSize="24"/>
-        <Label Text="{Binding Condition}"/>
-        <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
-    </StackLayout>
-</ContentPage>
+      
+    </Grid>
+  -->
 
 
 
