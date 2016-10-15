@@ -1,8 +1,10 @@
-﻿using Foundation;
-using System;
-using UIKit;
+﻿using UIKit;
+using Foundation;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+
+using HockeyApp.iOS;
 
 namespace MyWeather.iOS
 {
@@ -22,6 +24,8 @@ namespace MyWeather.iOS
                 TextColor = UIColor.White
             });
             Forms.Init();
+
+			InitializeHockeyApp(HockeyappConstants.HockeyAppId_iOS);
 
             LoadApplication(new App());
 
@@ -57,6 +61,16 @@ namespace MyWeather.iOS
 		public override void WillTerminate (UIApplication application)
 		{
 			// Called when the application is about to terminate. Save data, if needed. See also DidEnterBackground.
+		}
+
+		void InitializeHockeyApp(string iOSHockeyAppID)
+		{
+			var manager = BITHockeyManager.SharedHockeyManager;
+			manager.Configure(iOSHockeyAppID);
+			manager.LogLevel = BITLogLevel.Debug;
+			manager.StartManager();
+			manager.Authenticator.AuthenticateInstallation();
+			manager.UpdateManager.CheckForUpdate();
 		}
 	}
 }
