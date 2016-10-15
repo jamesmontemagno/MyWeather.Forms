@@ -1,19 +1,18 @@
-﻿<Properties StartupConfiguration="{65B45A0F-D6D8-432F-B36D-D7D41675DC76}|Default">
+﻿<Properties StartupConfiguration="{7F106FBA-12E5-4D92-9F4C-38EAD1652E7E}|Default">
   <MonoDevelop.Ide.ItemProperties.MyWeather.Android PreferredExecutionTarget="Android.Nexus_5_API_24" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyWeather.Droid/MainActivity.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyWeather.iOS/Info.plist">
     <Files>
-      <File FileName="MyWeather/ViewModel/WeatherViewModel.cs" Line="13" Column="1" />
-      <File FileName="MyWeather/Constants/HockeyappConstants.cs" Line="14" Column="55" />
-      <File FileName="MyWeather/View/WeatherView.xaml.cs" Line="2" Column="1" />
-      <File FileName="MyWeather/View/ForecastView.xaml.cs" Line="2" Column="1" />
-      <File FileName="MyWeather.Droid/MainActivity.cs" Line="44" Column="15" />
-      <File FileName="MyWeather.Droid/MainApplication.cs" Line="4" Column="18" />
+      <File FileName="MyWeather.iOS/AppDelegate.cs" Line="72" Column="53" />
+      <File FileName="MyWeather.iOS/Info.plist" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/brandonm/Projects/GitHub/MyWeather.Forms/MyWeather.Droid/MainActivity.cs" line="52" column="1" />
+      <Breakpoint file="/Users/brandonm/Projects/GitHub/MyWeather.Forms/MyWeather.Droid/MainActivity.cs" line="46" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MyWeather.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneDeviceTarget.01f0dd88c0bb973f77b3d1313a1084f1780edc1c" />
+  <MonoDevelop.Ide.ItemProperties.MyWeather.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.FA739F19-02F7-4953-B319-EFF6A611CDAB" />
 </Properties>
