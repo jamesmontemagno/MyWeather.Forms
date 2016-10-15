@@ -1,10 +1,10 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyWeather.View.WeatherView"
              Title="Weather">
     <StackLayout Padding="10" Spacing="10">
-        <Entry Text="{Binding Location}">
+        <Entry x:Name="LocationEntry" Text="{Binding Location}">
             <Entry.Triggers>
                 <DataTrigger TargetType="Entry"
                              Binding="{Binding UseGPS}"
@@ -16,13 +16,13 @@
 
         <StackLayout Orientation="Horizontal" Spacing="10">
             <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
-            <Switch IsToggled="{Binding UseGPS}"/>
+            <Switch x:Name="UseGPSSwitch" IsToggled="{Binding UseGPS}"/>
         </StackLayout>
         
-        <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
-        <Label Text="{Binding Temp}" FontSize="24"/>
-        <Label Text="{Binding Condition}"/>
-        <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
+        <Button x:Name="GetWeatherButton" Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
+        <Label x:Name="TempLabel" Text="{Binding Temp}" FontSize="24"/>
+        <Label x:Name="ConditionLabel" Text="{Binding Condition}"/>
+        <ActivityIndicator x:Name="GetWeatherActivityIndicator" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
     </StackLayout>
 </ContentPage>
 

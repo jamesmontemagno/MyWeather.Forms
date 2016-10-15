@@ -46,7 +46,7 @@
       <DependentUpon>WeatherView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Constants\HockeyappConstants.cs" />
-    <Compile Include="Constants\ApplicationIdConstants.cs" />
+    <Compile Include="Constants\AutomationIdConstants.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
