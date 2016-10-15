@@ -25,6 +25,8 @@ namespace MyWeather.UITests
 		}
 
 		[TestCase("San Francisco,CA")]
+		[TestCase("Orlando,FL")]
+		[TestCase("New York,NY")]
 		[Test]
 		public void GetWeatherUsingText(string location)
 		{
