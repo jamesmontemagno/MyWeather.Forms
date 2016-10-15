@@ -28,10 +28,7 @@ namespace MyWeather.Droid
 
 			Forms.Init(this, bundle);
 
-			CrashManager.Register(this, HockeyappConstants.HockeyAppId_Droid);
-			UpdateManager.Register(this, HockeyappConstants.HockeyAppId_Droid, true);
-			FeedbackManager.Register(this, HockeyappConstants.HockeyAppId_Droid, null);
-			MetricsManager.Register(Application);
+			InitializeHockeyApp(HockeyappConstants.HockeyAppId_Droid);
 
 			LoadApplication(new App());
 		}
@@ -51,6 +48,14 @@ namespace MyWeather.Droid
 		{
 			base.OnPause();
 			Tracking.StopUsage(this);
+		}
+
+		void InitializeHockeyApp(string hockeyAppID)
+		{
+			CrashManager.Register(this, hockeyAppID);
+			UpdateManager.Register(this, hockeyAppID, true);
+			FeedbackManager.Register(this, hockeyAppID, null);
+			MetricsManager.Register(Application);
 		}
 	}
 }

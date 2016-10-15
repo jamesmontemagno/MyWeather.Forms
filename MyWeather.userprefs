@@ -1,16 +1,46 @@
 ﻿<Properties StartupConfiguration="{7F106FBA-12E5-4D92-9F4C-38EAD1652E7E}|Default">
-  <MonoDevelop.Ide.ItemProperties.MyWeather.Android PreferredExecutionTarget="Android.Nexus_5_API_24" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyWeather.iOS/Info.plist">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyWeather.UITests/Tests/BaseTest.cs">
     <Files>
-      <File FileName="MyWeather.iOS/AppDelegate.cs" Line="72" Column="53" />
-      <File FileName="MyWeather.iOS/Info.plist" />
+      <File FileName="MyWeather.UITests/Tests/Tests.cs" Line="32" Column="1" />
+      <File FileName="MyWeather.UITests/Pages/WeatherPage.cs" Line="26" Column="99" />
+      <File FileName="MyWeather.iOS/AppDelegate.cs" Line="26" Column="4" />
+      <File FileName="MyWeather.Droid/MainActivity.cs" Line="31" Column="60" />
+      <File FileName="MyWeather.UITests/Pages/BasePage.cs" Line="36" Column="31" />
+      <File FileName="MyWeather.UITests/Tests/BaseTest.cs" Line="28" Column="16" />
     </Files>
+    <Pads>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="MyWeather" expanded="True">
+            <Node name="MyWeather.UITests" expanded="True">
+              <Node name="Test Apps" expanded="True" />
+              <Node name="MyWeather" expanded="True">
+                <Node name="UITests" expanded="True">
+                  <Node name="Tests" expanded="True">
+                    <Node name="Tests(Android)" expanded="True">
+                      <Node name="GetWeatherUsingText" expanded="True" />
+                    </Node>
+                    <Node name="Tests(iOS)" expanded="True">
+                      <Node name="GetWeatherUsingText" expanded="True">
+                        <Node name="GetWeatherUsingText(&quot;San Francisco,CA&quot;)" selected="True" />
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
-      <Breakpoint file="/Users/brandonm/Projects/GitHub/MyWeather.Forms/MyWeather.Droid/MainActivity.cs" line="52" column="1" />
-      <Breakpoint file="/Users/brandonm/Projects/GitHub/MyWeather.Forms/MyWeather.Droid/MainActivity.cs" line="46" column="1" />
+      <Breakpoint file="/Users/brandonm/Projects/GitHub/MyWeather.Forms/MyWeather.Droid/MainActivity.cs" line="49" column="1" />
+      <Breakpoint file="/Users/brandonm/Projects/GitHub/MyWeather.Forms/MyWeather.Droid/MainActivity.cs" line="43" column="1" />
+      <Breakpoint file="/Users/brandonm/Projects/GitHub/MyWeather.Forms/MyWeather.UITests/Tests/Tests.cs" line="32" column="1" />
+      <Breakpoint file="/Users/brandonm/Projects/GitHub/MyWeather.Forms/MyWeather.UITests/Pages/BasePage.cs" line="38" column="73" />
     </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
