@@ -64,5 +64,11 @@ namespace MyWeather.UITests
 			App.WaitForNoElement(GetWeatherActivityIndicator);
 			App.Screenshot("Activity Indicator Disappeared");
 		}
+
+		public bool IsWeatherPageVisible()
+		{
+			var getWeatherButtonQuery = App.Query(GetWeatherButton);
+			return getWeatherButtonQuery.Length > 0;
+		}
 	}
 }
