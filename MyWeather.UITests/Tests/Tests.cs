@@ -24,12 +24,12 @@ namespace MyWeather.UITests
 			base.TestSetup();
 		}
 
-		[TestCase("San Francisco,CA", "true")]
-		[TestCase("San Francisco,CA", "false")]
-		[TestCase("Orlando,FL", "true")]
-		[TestCase("Orlando,FL", "false")]
-		[TestCase("New York,NY", "true")]
-		[TestCase("New York,NY", "false")]
+		[TestCase("San Francisco,CA", true)]
+		[TestCase("San Francisco,CA", false)]
+		[TestCase("Orlando,FL", true)]
+		[TestCase("Orlando,FL", false)]
+		[TestCase("New York,NY", true)]
+		[TestCase("New York,NY", false)]
 		[Test]
 		public void GetWeatherUsingText(string location, bool toggleScreensBeforeTest)
 		{
@@ -52,8 +52,8 @@ namespace MyWeather.UITests
 		}
 
 
-		[TestCase("true")]
-		[TestCase("false")]
+		[TestCase(true)]
+		[TestCase(false)]
 		[Test]
 		public void GetWeatherUsingGPS(bool toggleScreensBeforeTest)
 		{

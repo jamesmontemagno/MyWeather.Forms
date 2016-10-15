@@ -5,20 +5,9 @@
       <File FileName="MyWeather.Droid/MainActivity.cs" Line="31" Column="21" />
       <File FileName="MyWeather/Model/Weather.cs" Line="1" Column="1" />
       <File FileName="MyWeather/ViewModel/WeatherViewModel.cs" Line="31" Column="14" />
-      <File FileName="MyWeather.UITests/Tests/Tests.cs" Line="86" Column="5" />
+      <File FileName="MyWeather.UITests/Tests/Tests.cs" Line="65" Column="4" />
       <File FileName="MyWeather.UITests/Pages/ForecastPage.cs" Line="7" Column="107" />
     </Files>
-    <Pads>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="MyWeather" expanded="True" selected="True">
-            <Node name="MyWeather.UITests" expanded="True">
-              <Node name="Test Apps" expanded="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
