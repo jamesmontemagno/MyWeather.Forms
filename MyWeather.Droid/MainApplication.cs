@@ -1,8 +1,9 @@
 using System;
 
-using Android.App;
 using Android.OS;
+using Android.App;
 using Android.Runtime;
+
 using Plugin.CurrentActivity;
 
 namespace MyWeather.Droid
@@ -18,9 +19,9 @@ namespace MyWeather.Droid
 
         public override void OnCreate()
         {
+			//A great place to initialize Xamarin.Insights and Dependency Services!
             base.OnCreate();
             RegisterActivityLifecycleCallbacks(this);
-            //A great place to initialize Xamarin.Insights and Dependency Services!
         }
 
         public override void OnTerminate()
