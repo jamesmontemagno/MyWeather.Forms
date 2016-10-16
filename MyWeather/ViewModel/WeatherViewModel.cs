@@ -1,14 +1,20 @@
-using MyWeather.Helpers;
-using MyWeather.Models;
-using MyWeather.Services;
 using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
-using System.Threading.Tasks;
+using System.Collections.Generic;
 using System.Windows.Input;
+using System.ComponentModel;
+using System.Threading.Tasks;
+using System.Runtime.CompilerServices;
+
 using Xamarin.Forms;
-using Plugin.TextToSpeech;
+
 using Plugin.Geolocator;
+using Plugin.TextToSpeech;
+
+using HockeyApp;
+
+using MyWeather.Models;
+using MyWeather.Helpers;
+using MyWeather.Services;
 
 namespace MyWeather.ViewModels
 {
@@ -34,6 +40,10 @@ namespace MyWeather.ViewModels
             get { return useGPS; }
             set
             {
+                HockeyappHelpers.TrackEvent(HockeyappConstants.GPSSwitchToggled,
+                    new Dictionary<string, string> { { "Use GPS Value", value.ToString() } },
+                    null);
+
                 useGPS = value;
                 OnPropertyChanged();
             }
@@ -90,7 +100,11 @@ namespace MyWeather.ViewModels
         ICommand getWeather;
         public ICommand GetWeatherCommand =>
                 getWeather ??
-                (getWeather = new Command(async () => await ExecuteGetWeatherCommand()));
+        (getWeather = new Command(async () =>
+        {
+            await ExecuteGetWeatherCommand();
+        }));
+
 
         private async Task ExecuteGetWeatherCommand()
         {
@@ -102,11 +116,11 @@ namespace MyWeather.ViewModels
             {
                 WeatherRoot weatherRoot = null;
                 var units = IsImperial ? Units.Imperial : Units.Metric;
-               
+
 
                 if (UseGPS)
                 {
-					
+
                     var gps = await CrossGeolocator.Current.GetPositionAsync(10000);
                     weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
                 }
@@ -115,7 +129,7 @@ namespace MyWeather.ViewModels
                     //Get weather by city
                     weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
                 }
-                
+
 
                 //Get forecast based on cityId
                 Forecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
@@ -131,13 +145,29 @@ namespace MyWeather.ViewModels
             }
             finally
             {
+                var eventDictionaryHockeyApp = new Dictionary<string, string>
+                {
+                    {"Use GPS Enabled", UseGPS.ToString()}
+                };
+
+                var locationCityName = UseGPS
+                    ? Condition.Substring(0, Condition.IndexOf(":", StringComparison.Ordinal))
+                    : Location.Substring(0, Location.IndexOf(",", StringComparison.Ordinal));
+
+                eventDictionaryHockeyApp.Add("Location", locationCityName);
+
+                HockeyappHelpers.TrackEvent(HockeyappConstants.GetWeatherButtonTapped, eventDictionaryHockeyApp, null);
+
                 IsBusy = false;
             }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public void OnPropertyChanged([CallerMemberName]string name = "") =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+        public void OnPropertyChanged([CallerMemberName]string name = "")
+        {
+            var handle = PropertyChanged;
+            handle?.Invoke(this, new PropertyChangedEventArgs(name));
+        }
     }
 }

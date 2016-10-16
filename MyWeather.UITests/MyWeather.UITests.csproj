@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E8277591-379B-4CBF-8FD3-0411DEFBEB37}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MyWeather.UITests</RootNamespace>
+    <AssemblyName>MyWeather.UITests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Xamarin.UITest">
+      <HintPath>..\packages\Xamarin.UITest.2.0.0\lib\Xamarin.UITest.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="nunit.framework">
+      <HintPath>..\packages\NUnit.2.6.4\lib\nunit.framework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AppInitializer.cs" />
+    <Compile Include="Pages\WeatherPage.cs" />
+    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Tests\Tests.cs" />
+    <Compile Include="Tests\BaseTest.cs" />
+    <Compile Include="Pages\ForecastPage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+    <Folder Include="Tests\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyWeather\MyWeather.csproj">
+      <Project>{5366CC83-65A3-4969-B883-3229108447E2}</Project>
+      <Name>MyWeather</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWeather.iOS\MyWeather.iOS.csproj">
+      <Project>{7F106FBA-12E5-4D92-9F4C-38EAD1652E7E}</Project>
+      <Name>MyWeather.iOS</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\MyWeather.Droid\MyWeather.Android.csproj">
+      <Project>{65B45A0F-D6D8-432F-B36D-D7D41675DC76}</Project>
+      <Name>MyWeather.Android</Name>
+      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>

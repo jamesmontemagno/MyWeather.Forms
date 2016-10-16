@@ -1,8 +1,9 @@
 using System;
 
-using Android.App;
 using Android.OS;
+using Android.App;
 using Android.Runtime;
+
 using Plugin.CurrentActivity;
 
 namespace MyWeather.Droid
@@ -18,9 +19,9 @@ namespace MyWeather.Droid
 
         public override void OnCreate()
         {
+			//A great place to initialize Xamarin.Insights and Dependency Services!
             base.OnCreate();
             RegisterActivityLifecycleCallbacks(this);
-            //A great place to initialize Xamarin.Insights and Dependency Services!
         }
 
         public override void OnTerminate()
@@ -36,14 +37,17 @@ namespace MyWeather.Droid
 
         public void OnActivityDestroyed(Activity activity)
         {
+			UnregisterActivityLifecycleCallbacks(this);
         }
 
         public void OnActivityPaused(Activity activity)
         {
+			UnregisterActivityLifecycleCallbacks(this);
         }
 
         public void OnActivityResumed(Activity activity)
         {
+			RegisterActivityLifecycleCallbacks(this);
             CrossCurrentActivity.Current.Activity = activity;
         }
 
@@ -53,11 +57,13 @@ namespace MyWeather.Droid
 
         public void OnActivityStarted(Activity activity)
         {
+			RegisterActivityLifecycleCallbacks(this);
             CrossCurrentActivity.Current.Activity = activity;
         }
 
         public void OnActivityStopped(Activity activity)
         {
+			UnregisterActivityLifecycleCallbacks(this);
         }
     }
 }

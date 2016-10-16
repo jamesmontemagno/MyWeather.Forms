@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Permissions</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Permissions.CrossPermissions">
+            <summary>
+            Cross platform Permissions implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.Permissions.CrossPermissions.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:Plugin.Permissions.PermissionsImplementation">
+            <summary>
+            Implementation for Permissions
+            </summary>
+        </member>
+        <member name="P:Plugin.Permissions.PermissionsImplementation.Current">
+            <summary>
+            Gets the current permissions implementation
+            </summary>
+            <value>The current.</value>
+        </member>
+        <member name="M:Plugin.Permissions.PermissionsImplementation.ShouldShowRequestPermissionRationaleAsync(Plugin.Permissions.Abstractions.Permission)">
+            <summary>
+            Request to see if you should show a rationale for requesting permission
+            Only on Android
+            </summary>
+            <returns>True or false to show rationale</returns>
+            <param name="permission">Permission to check.</param>
+        </member>
+        <member name="M:Plugin.Permissions.PermissionsImplementation.CheckPermissionStatusAsync(Plugin.Permissions.Abstractions.Permission)">
+            <summary>
+            Determines whether this instance has permission the specified permission.
+            </summary>
+            <returns><c>true</c> if this instance has permission the specified permission; otherwise, <c>false</c>.</returns>
+            <param name="permission">Permission to check.</param>
+        </member>
+        <member name="M:Plugin.Permissions.PermissionsImplementation.RequestPermissionsAsync(Plugin.Permissions.Abstractions.Permission[])">
+            <summary>
+            Requests the permissions from the users
+            </summary>
+            <returns>The permissions and their status.</returns>
+            <param name="permissions">Permissions to request.</param>
+        </member>
+    </members>
+</doc>

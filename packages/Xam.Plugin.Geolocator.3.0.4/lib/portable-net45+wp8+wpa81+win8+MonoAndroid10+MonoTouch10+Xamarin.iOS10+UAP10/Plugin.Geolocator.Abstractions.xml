@@ -1,0 +1,183 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Geolocator.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Geolocator.Abstractions.IGeolocator">
+            <summary>
+            Interface for Geolocator
+            </summary>
+        </member>
+        <member name="E:Plugin.Geolocator.Abstractions.IGeolocator.PositionError">
+            <summary>
+            Position error event handler
+            </summary>
+        </member>
+        <member name="E:Plugin.Geolocator.Abstractions.IGeolocator.PositionChanged">
+            <summary>
+            Position changed event handler
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.IGeolocator.DesiredAccuracy">
+            <summary>
+            Desired accuracy in meteres
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.IGeolocator.IsListening">
+            <summary>
+            Gets if you are listening for location changes
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.IGeolocator.SupportsHeading">
+            <summary>
+            Gets if device supports heading
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.IGeolocator.AllowsBackgroundUpdates">
+            <summary>
+            Gets or sets if background updates should be allowed on the geolocator.
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.IGeolocator.PausesLocationUpdatesAutomatically">
+            <summary>
+            Gets or sets if the location updates should be paused automatically (iOS)
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.IGeolocator.IsGeolocationAvailable">
+            <summary>
+            Gets if geolocation is available on device
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.IGeolocator.IsGeolocationEnabled">
+            <summary>
+            Gets if geolocation is enabled on device
+            </summary>
+        </member>
+        <member name="M:Plugin.Geolocator.Abstractions.IGeolocator.GetPositionAsync(System.Int32,System.Nullable{System.Threading.CancellationToken},System.Boolean)">
+            <summary>
+            Gets position async with specified parameters
+            </summary>
+            <param name="timeoutMilliseconds">Timeout in milliseconds to wait, Default Infinite</param>
+            <param name="token">Cancelation token</param>
+            <param name="includeHeading">If you would like to include heading</param>
+            <returns>Position</returns>
+        </member>
+        <member name="M:Plugin.Geolocator.Abstractions.IGeolocator.StartListeningAsync(System.Int32,System.Double,System.Boolean)">
+            <summary>
+            Start lisenting for changes
+            </summary>
+            <param name="minTime">Time</param>
+            <param name="minDistance">Distance</param>
+            <param name="includeHeading">Include heading or not</param>
+        </member>
+        <member name="M:Plugin.Geolocator.Abstractions.IGeolocator.StopListeningAsync">
+            <summary>
+            Stop linstening
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.Position.Latitude">
+            <summary>
+            Gets or sets the latitude.
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.Position.Longitude">
+            <summary>
+            Gets or sets the longitude.
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.Position.Altitude">
+            <summary>
+            Gets or sets the altitude in meters relative to sea level.
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.Position.Accuracy">
+            <summary>
+            Gets or sets the potential position error radius in meters.
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.Position.AltitudeAccuracy">
+            <summary>
+            Gets or sets the potential altitude error range in meters.
+            </summary>
+            <remarks>
+            Not supported on Android, will always read 0.
+            </remarks>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.Position.Heading">
+            <summary>
+            Gets or sets the heading in degrees relative to true North.
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.Position.Speed">
+            <summary>
+            Gets or sets the speed in meters per second.
+            </summary>
+        </member>
+        <member name="T:Plugin.Geolocator.Abstractions.PositionEventArgs">
+            <summary>
+            Position args
+            </summary>
+        </member>
+        <member name="M:Plugin.Geolocator.Abstractions.PositionEventArgs.#ctor(Plugin.Geolocator.Abstractions.Position)">
+            <summary>
+            Position args
+            </summary>
+            <param name="position"></param>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.PositionEventArgs.Position">
+            <summary>
+            The Position
+            </summary>
+        </member>
+        <member name="T:Plugin.Geolocator.Abstractions.GeolocationException">
+            <summary>
+            Location exception
+            </summary>
+        </member>
+        <member name="M:Plugin.Geolocator.Abstractions.GeolocationException.#ctor(Plugin.Geolocator.Abstractions.GeolocationError)">
+            <summary>
+            Location exception
+            </summary>
+            <param name="error"></param>
+        </member>
+        <member name="M:Plugin.Geolocator.Abstractions.GeolocationException.#ctor(Plugin.Geolocator.Abstractions.GeolocationError,System.Exception)">
+            <summary>
+            Geolocation error
+            </summary>
+            <param name="error"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="T:Plugin.Geolocator.Abstractions.PositionErrorEventArgs">
+            <summary>
+            Error ARgs
+            </summary>
+        </member>
+        <member name="M:Plugin.Geolocator.Abstractions.PositionErrorEventArgs.#ctor(Plugin.Geolocator.Abstractions.GeolocationError)">
+            <summary>
+            Constructor for event error args
+            </summary>
+            <param name="error"></param>
+        </member>
+        <member name="P:Plugin.Geolocator.Abstractions.PositionErrorEventArgs.Error">
+            <summary>
+            The Error
+            </summary>
+        </member>
+        <member name="T:Plugin.Geolocator.Abstractions.GeolocationError">
+            <summary>
+            Error for geolocator
+            </summary>
+        </member>
+        <member name="F:Plugin.Geolocator.Abstractions.GeolocationError.PositionUnavailable">
+            <summary>
+            The provider was unable to retrieve any position data.
+            </summary>
+        </member>
+        <member name="F:Plugin.Geolocator.Abstractions.GeolocationError.Unauthorized">
+            <summary>
+            The app is not, or no longer, authorized to receive location data.
+            </summary>
+        </member>
+    </members>
+</doc>
