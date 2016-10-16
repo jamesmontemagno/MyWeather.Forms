@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Geolocator</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Geolocator.CrossGeolocator">
+            <summary>
+            Cross platform Geolocator implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.CrossGeolocator.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:Plugin.Geolocator.GeolocatorImplementation">
+            <summary>
+            Geolocator implementation
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.AllowsBackgroundUpdates">
+            <summary>
+            Allows background updates
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.DesiredAccuracy">
+            <summary>
+            Accuracy
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.IsGeolocationAvailable">
+            <summary>
+            Is Available
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.IsGeolocationEnabled">
+            <summary>
+            Is Enabled
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.IsListening">
+            <summary>
+            Is Listening
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.PausesLocationUpdatesAutomatically">
+            <summary>
+            Pauses
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.SupportsHeading">
+            <summary>
+            Supports heading
+            </summary>
+        </member>
+        <member name="E:Plugin.Geolocator.GeolocatorImplementation.PositionChanged">
+            <summary>
+            Position changed
+            </summary>
+        </member>
+        <member name="E:Plugin.Geolocator.GeolocatorImplementation.PositionError">
+            <summary>
+            Position error
+            </summary>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.GetPositionAsync(System.Int32,System.Nullable{System.Threading.CancellationToken},System.Boolean)">
+            <summary>
+            Get position
+            </summary>
+            <param name="timeoutMilliseconds"></param>
+            <param name="token"></param>
+            <param name="includeHeading"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.StartListeningAsync(System.Int32,System.Double,System.Boolean)">
+            <summary>
+            Start listenting
+            </summary>
+            <param name="minTime"></param>
+            <param name="minDistance"></param>
+            <param name="includeHeading"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.StopListeningAsync">
+            <summary>
+            Stop listening
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Settings</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Settings.CrossSettings">
+            <summary>
+            Cross Platform settings
+            </summary>
+        </member>
+        <member name="P:Plugin.Settings.CrossSettings.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>

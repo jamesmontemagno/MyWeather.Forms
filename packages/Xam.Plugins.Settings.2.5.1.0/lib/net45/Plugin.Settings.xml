@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Settings</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Settings.SettingsImplementation">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.AddOrUpdateValue``1(System.String,``0)">
+            <summary>
+            Add or Upate
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.GetValueOrDefault``1(System.String,``0)">
+            <summary>
+            Get Value
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="key"></param>
+            <param name="defaultValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.Remove(System.String)">
+            <summary>
+            Remove key
+            </summary>
+            <param name="key"></param>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.Clear">
+            <summary>
+            Clear all keys from settings
+            </summary>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.Contains(System.String)">
+            <summary>
+            Checks to see if the key has been added.
+            </summary>
+            <param name="key">Key to check</param>
+            <returns>True if contains key, else false</returns>
+        </member>
+        <member name="T:Plugin.Settings.CrossSettings">
+            <summary>
+            Cross Platform settings
+            </summary>
+        </member>
+        <member name="P:Plugin.Settings.CrossSettings.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>

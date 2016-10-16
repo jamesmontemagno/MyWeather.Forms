@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Geolocator</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Geolocator.CrossGeolocator">
+            <summary>
+            Cross platform Geolocator implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.CrossGeolocator.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:Plugin.Geolocator.GeolocatorImplementation">
+            <summary>
+            Implementation for Feature
+            </summary>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.#ctor">
+            <summary>
+            Default constructor
+            </summary>
+        </member>
+        <member name="E:Plugin.Geolocator.GeolocatorImplementation.PositionError">
+            <inheritdoc/>
+        </member>
+        <member name="E:Plugin.Geolocator.GeolocatorImplementation.PositionChanged">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.IsListening">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.DesiredAccuracy">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.AllowsBackgroundUpdates">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.PausesLocationUpdatesAutomatically">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.SupportsHeading">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.IsGeolocationAvailable">
+            <inheritdoc/>
+        </member>
+        <member name="P:Plugin.Geolocator.GeolocatorImplementation.IsGeolocationEnabled">
+            <inheritdoc/>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.GetPositionAsync(System.Int32,System.Nullable{System.Threading.CancellationToken},System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.StartListeningAsync(System.Int32,System.Double,System.Boolean)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.StopListeningAsync">
+            <inheritdoc/>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.OnListenerPositionChanged(System.Object,Plugin.Geolocator.Abstractions.PositionEventArgs)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Plugin.Geolocator.GeolocatorImplementation.OnListenerPositionError(System.Object,Plugin.Geolocator.Abstractions.PositionErrorEventArgs)">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

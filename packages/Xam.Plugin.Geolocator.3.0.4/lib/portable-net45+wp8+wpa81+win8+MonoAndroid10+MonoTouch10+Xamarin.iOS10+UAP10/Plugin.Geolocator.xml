@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Geolocator</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Geolocator.CrossGeolocator">
+            <summary>
+            Cross platform Geolocator implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.Geolocator.CrossGeolocator.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>

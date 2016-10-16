@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Permissions.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Permissions.Abstractions.IPermissions">
+            <summary>
+            Interface for Permissions
+            </summary>
+        </member>
+        <member name="M:Plugin.Permissions.Abstractions.IPermissions.ShouldShowRequestPermissionRationaleAsync(Plugin.Permissions.Abstractions.Permission)">
+            <summary>
+            Request to see if you should show a rationale for requesting permission
+            Only on Android
+            </summary>
+            <returns>True or false to show rationale</returns>
+            <param name="permission">Permission to check.</param>
+        </member>
+        <member name="M:Plugin.Permissions.Abstractions.IPermissions.CheckPermissionStatusAsync(Plugin.Permissions.Abstractions.Permission)">
+            <summary>
+            Determines whether this instance has permission the specified permission.
+            </summary>
+            <returns><c>true</c> if this instance has permission the specified permission; otherwise, <c>false</c>.</returns>
+            <param name="permission">Permission to check.</param>
+        </member>
+        <member name="M:Plugin.Permissions.Abstractions.IPermissions.RequestPermissionsAsync(Plugin.Permissions.Abstractions.Permission[])">
+            <summary>
+            Requests the permissions from the users
+            </summary>
+            <returns>The permissions and their status.</returns>
+            <param name="permissions">Permissions to request.</param>
+        </member>
+        <member name="T:Plugin.Permissions.Abstractions.PermissionStatus">
+            <summary>
+            Status of a permission
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.PermissionStatus.Denied">
+            <summary>
+            Denied by user
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.PermissionStatus.Disabled">
+            <summary>
+            Feature is disabled on device
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.PermissionStatus.Granted">
+            <summary>
+            Granted by user
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.PermissionStatus.Restricted">
+            <summary>
+            Restricted (only iOS)
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.PermissionStatus.Unknown">
+            <summary>
+            Permission is in an unknown state
+            </summary>
+        </member>
+        <member name="T:Plugin.Permissions.Abstractions.Permission">
+            <summary>
+            Permission group that can be requested
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Unknown">
+            <summary>
+            The unknown permission only used for return type, never requested
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Calendar">
+            <summary>
+            Android: Calendar
+            iOS: Calendar (Events)
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Camera">
+            <summary>
+            Android: Camera
+            iOS: Photos (Camera Roll and Camera)
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Contacts">
+            <summary>
+            Android: Contacts
+            iOS: AddressBook
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Location">
+            <summary>
+            Android: Fine and Coarse Location
+            iOS: CoreLocation (Always and WhenInUse)
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Microphone">
+            <summary>
+            Android: Microphone
+            iOS: Microphone
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Phone">
+            <summary>
+            Android: Phone
+            iOS: Nothing
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Photos">
+            <summary>
+            Android: Nothing
+            iOS: Photos
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Reminders">
+            <summary>
+            Android: Nothing
+            iOS: Reminders
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Sensors">
+            <summary>
+            Android: Body Sensors
+            iOS: CoreMotion
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Sms">
+            <summary>
+            Android: Sms
+            iOS: Nothing
+            </summary>
+        </member>
+        <member name="F:Plugin.Permissions.Abstractions.Permission.Storage">
+            <summary>
+            Android: External Storage
+            iOS: Nothing
+            </summary>
+        </member>
+    </members>
+</doc>

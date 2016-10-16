@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.Settings</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.Settings.SettingsImplementation">
+            <summary>
+            Main implementation for ISettings
+            </summary>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.GetValueOrDefault``1(System.String,``0)">
+            <summary>
+            Gets the current value or the default that you specify.
+            </summary>
+            <typeparam name="T">Vaue of t (bool, int, float, long, string)</typeparam>
+            <param name="key">Key for settings</param>
+            <param name="defaultValue">default value if not set</param>
+            <returns>Value or default</returns>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.AddOrUpdateValue``1(System.String,``0)">
+            <summary>
+            Adds or updates a value
+            </summary>
+            <param name="key">key to update</param>
+            <param name="value">value to set</param>
+            <returns>True if added or update and you need to save</returns>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.Remove(System.String)">
+            <summary>
+            Removes a desired key from the settings
+            </summary>
+            <param name="key">Key for setting</param>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.Clear">
+            <summary>
+            Clear all keys from settings
+            </summary>
+        </member>
+        <member name="M:Plugin.Settings.SettingsImplementation.Contains(System.String)">
+            <summary>
+            Checks to see if the key has been added.
+            </summary>
+            <param name="key">Key to check</param>
+            <returns>True if contains key, else false</returns>
+        </member>
+        <member name="T:Plugin.Settings.CrossSettings">
+            <summary>
+            Cross Platform settings
+            </summary>
+        </member>
+        <member name="P:Plugin.Settings.CrossSettings.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+    </members>
+</doc>

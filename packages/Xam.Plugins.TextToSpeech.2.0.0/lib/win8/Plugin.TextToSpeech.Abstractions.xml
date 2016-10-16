@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.TextToSpeech.Abstractions</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.TextToSpeech.Abstractions.CrossLocale">
+            <summary>
+            Struct for a language local
+            </summary>
+        </member>
+        <member name="P:Plugin.TextToSpeech.Abstractions.CrossLocale.Language">
+            <summary>
+            Main language code for iOS/WP/Android
+            </summary>
+        </member>
+        <member name="P:Plugin.TextToSpeech.Abstractions.CrossLocale.Country">
+            <summary>
+            Country code to use on Android
+            </summary>
+        </member>
+        <member name="P:Plugin.TextToSpeech.Abstractions.CrossLocale.DisplayName">
+            <summary>
+            Friendy Display Name if avaialble
+            </summary>
+        </member>
+        <member name="M:Plugin.TextToSpeech.Abstractions.CrossLocale.ToString">
+            <summary>
+            Language + Country if avaialble
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Plugin.TextToSpeech.Abstractions.ITextToSpeech">
+            <summary>
+            Interface for TTS
+            </summary>
+        </member>
+        <member name="M:Plugin.TextToSpeech.Abstractions.ITextToSpeech.Init">
+            <summary>
+            Initialize TTS
+            </summary>
+        </member>
+        <member name="M:Plugin.TextToSpeech.Abstractions.ITextToSpeech.Speak(System.String,System.Boolean,System.Nullable{Plugin.TextToSpeech.Abstractions.CrossLocale},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})">
+            <summary>
+            Speak back text
+            </summary>
+            <param name="text">Text to speak</param>
+            <param name="queue">If you want to chain together speak command or cancel current</param>
+            <param name="crossLocale">Locale of voice</param>
+            <param name="pitch">Pitch of voice</param>
+            <param name="speakRate">Speak Rate of voice (All) (0.0 - 2.0f)</param>
+            <param name="volume">Volume of voice (iOS/WP) (0.0-1.0)</param>
+        </member>
+        <member name="M:Plugin.TextToSpeech.Abstractions.ITextToSpeech.GetInstalledLanguages">
+            <summary>
+            Get avalid list of installed languages for TTS
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

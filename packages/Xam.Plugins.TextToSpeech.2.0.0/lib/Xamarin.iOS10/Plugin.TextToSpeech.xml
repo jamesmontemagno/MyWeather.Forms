@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.TextToSpeech</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.TextToSpeech.TextToSpeech">
+            <summary>
+            Text to speech implemenation iOS
+            </summary>
+        </member>
+        <member name="M:Plugin.TextToSpeech.TextToSpeech.#ctor">
+            <summary>
+            Default contstructor. Creates new AVSpeechSynthesizer
+            </summary>
+        </member>
+        <member name="M:Plugin.TextToSpeech.TextToSpeech.Init">
+            <summary>
+            Initialize TTS
+            </summary>
+        </member>
+        <member name="M:Plugin.TextToSpeech.TextToSpeech.Speak(System.String,System.Boolean,System.Nullable{Plugin.TextToSpeech.Abstractions.CrossLocale},System.Nullable{System.Single},System.Nullable{System.Single},System.Nullable{System.Single})">
+            <summary>
+            Speak back text
+            </summary>
+            <param name="text">Text to speak</param>
+            <param name="queue">If you want to chain together speak command or cancel current</param>
+            <param name="crossLocale">Locale of voice</param>
+            <param name="pitch">Pitch of voice</param>
+            <param name="speakRate">Speak Rate of voice (All) (0.0 - 2.0f)</param>
+            <param name="volume">Volume of voice (iOS/WP) (0.0-1.0)</param>
+        </member>
+        <member name="M:Plugin.TextToSpeech.TextToSpeech.GetInstalledLanguages">
+            <summary>
+            Get all installed and valid languages
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Plugin.TextToSpeech.TextToSpeech.Dispose">
+            <summary>
+            Dispose of TTS
+            </summary>
+        </member>
+        <member name="T:Plugin.TextToSpeech.CrossTextToSpeech">
+            <summary>
+            Cross platform TTS implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.TextToSpeech.CrossTextToSpeech.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="M:Plugin.TextToSpeech.CrossTextToSpeech.Dispose">
+            <summary>
+            Dispose of TTS, reset lazy load
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.TextToSpeech</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.TextToSpeech.CrossTextToSpeech">
+            <summary>
+            Cross platform TTS implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.TextToSpeech.CrossTextToSpeech.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="M:Plugin.TextToSpeech.CrossTextToSpeech.Dispose">
+            <summary>
+            Dispose of TTS, reset lazy load
+            </summary>
+        </member>
+    </members>
+</doc>
