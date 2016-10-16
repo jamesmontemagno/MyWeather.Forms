@@ -40,7 +40,7 @@ namespace MyWeather.ViewModels
 			set
 			{
 				if (value)
-					MetricsManager.TrackEvent(HockeyappConstants.GPSSwitchEnabled);
+                    HockeyappHelpers.TrackEvent(HockeyappConstants.GPSSwitchEnabled);
 
 				useGPS = value;
 				OnPropertyChanged();
@@ -100,7 +100,7 @@ namespace MyWeather.ViewModels
 				getWeather ??
 		(getWeather = new Command(async () =>
 		{
-			MetricsManager.TrackEvent(HockeyappConstants.GetWeatherButtonTapped);
+            HockeyappHelpers.TrackEvent(HockeyappConstants.GetWeatherButtonTapped);
 			await ExecuteGetWeatherCommand();
 		}));
 

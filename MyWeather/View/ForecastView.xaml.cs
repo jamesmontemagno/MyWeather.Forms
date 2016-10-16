@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 
 using HockeyApp;
+using MyWeather.Helpers;
 
 namespace MyWeather.View
 {
@@ -17,7 +18,7 @@ namespace MyWeather.View
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
-			MetricsManager.TrackEvent(HockeyappConstants.WeatherPageAppeared);
+			HockeyappHelpers.TrackEvent(HockeyappConstants.WeatherPageAppeared);
 		}
     }
 }

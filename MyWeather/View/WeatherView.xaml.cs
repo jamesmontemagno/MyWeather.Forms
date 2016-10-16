@@ -2,6 +2,7 @@
 
 using HockeyApp;
 using System;
+using MyWeather.Helpers;
 
 namespace MyWeather.View
 {
@@ -20,7 +21,7 @@ namespace MyWeather.View
 		protected override void OnAppearing()
 		{
 			base.OnAppearing();
-			MetricsManager.TrackEvent(HockeyappConstants.WeatherPageAppeared);
+			HockeyappHelpers.TrackEvent(HockeyappConstants.WeatherPageAppeared);
 		}
 
 		void InitializeAutomationIds()
