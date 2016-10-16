@@ -41,7 +41,7 @@ namespace MyWeather.ViewModels
 			{
 				if (value)
 					MetricsManager.TrackEvent(HockeyappConstants.GPSSwitchEnabled);
-				
+
 				useGPS = value;
 				OnPropertyChanged();
 			}
@@ -150,7 +150,10 @@ namespace MyWeather.ViewModels
 
 		public event PropertyChangedEventHandler PropertyChanged;
 
-		public void OnPropertyChanged([CallerMemberName]string name = "") =>
-			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+		public void OnPropertyChanged([CallerMemberName]string name = "")
+		{
+			var handle = PropertyChanged;
+			handle?.Invoke(this, new PropertyChangedEventArgs(name));
+		}
 	}
 }

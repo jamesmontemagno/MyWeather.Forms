@@ -37,14 +37,17 @@ namespace MyWeather.Droid
 
         public void OnActivityDestroyed(Activity activity)
         {
+			UnregisterActivityLifecycleCallbacks(this);
         }
 
         public void OnActivityPaused(Activity activity)
         {
+			UnregisterActivityLifecycleCallbacks(this);
         }
 
         public void OnActivityResumed(Activity activity)
         {
+			RegisterActivityLifecycleCallbacks(this);
             CrossCurrentActivity.Current.Activity = activity;
         }
 
@@ -54,11 +57,13 @@ namespace MyWeather.Droid
 
         public void OnActivityStarted(Activity activity)
         {
+			RegisterActivityLifecycleCallbacks(this);
             CrossCurrentActivity.Current.Activity = activity;
         }
 
         public void OnActivityStopped(Activity activity)
         {
+			UnregisterActivityLifecycleCallbacks(this);
         }
     }
 }

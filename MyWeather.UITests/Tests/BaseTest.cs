@@ -12,6 +12,7 @@ namespace MyWeather.UITests
 		protected Platform Platform;
 
 		protected WeatherPage WeatherPage;
+		protected ForecastPage ForecastPage;
 
 		protected BaseTest(Platform platform)
 		{
@@ -24,6 +25,7 @@ namespace MyWeather.UITests
 			App = AppInitializer.StartApp(Platform);
 
 			WeatherPage = new WeatherPage(App, Platform);
+			ForecastPage = new ForecastPage(App, Platform);
 		}
 	}
 }

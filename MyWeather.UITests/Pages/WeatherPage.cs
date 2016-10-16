@@ -59,10 +59,16 @@ namespace MyWeather.UITests
 			App.Screenshot($"Entered Location: {location}");
 		}
 
-		public void WaitForNoActivityIndicator()
+		public void WaitForNoActivityIndicator(int timeoutInSeconds = 60)
 		{
-			App.WaitForNoElement(GetWeatherActivityIndicator);
+			App.WaitForNoElement(GetWeatherActivityIndicator, "Activity Indicator Never Disappeared",TimeSpan.FromSeconds(timeoutInSeconds));
 			App.Screenshot("Activity Indicator Disappeared");
+		}
+
+		public bool IsWeatherPageVisible()
+		{
+			var getWeatherButtonQuery = App.Query(GetWeatherButton);
+			return getWeatherButtonQuery.Length > 0;
 		}
 	}
 }
