@@ -13,7 +13,7 @@ namespace MyWeather
         public const string GetWeatherButtonTapped = "Get Weather Button Tapped";
 		public const string WeatherPageAppeared = "Weather Page Appeared";
 		public const string ForecastPageAppeared = "Forecast Page Appeared";
-		public const string GPSSwitchEnabled = "GPS Switch Enabled";
+		public const string GPSSwitchToggled = "GPS Switch Toggled";
 		#endregion
 	}
 }

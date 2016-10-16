@@ -9,5 +9,6 @@ namespace MyWeather.Services
     public interface IHockeyappService
     {
         void TrackEvent(string eventName);
+        void TrackEvent(string eventName, Dictionary<string, string> properties, Dictionary<string, double> measurements);
     }
 }

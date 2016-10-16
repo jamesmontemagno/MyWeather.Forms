@@ -23,5 +23,19 @@ namespace MyWeather.Helpers
                     break;
             }
         }
+
+        public static void TrackEvent(string eventName, Dictionary<string, string> properties, Dictionary<string,double> measurements)
+        {
+            switch (Device.OS)
+            {
+                case TargetPlatform.iOS:
+                case TargetPlatform.Android:
+                    HockeyApp.MetricsManager.TrackEvent(eventName,properties,measurements);
+                    break;
+                case TargetPlatform.Windows:
+                    DependencyService.Get<IHockeyappService>()?.TrackEvent(eventName, properties, measurements);
+                    break;
+            }
+        }
     }
 }
