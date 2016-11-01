@@ -4,6 +4,7 @@
              x:Class="MyWeather.View.WeatherView"
              xmlns:converters="clr-namespace:MyWeather.Converters;assembly=MyWeather"
              xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
+             xmlns:myiOS="clr-namespace:MyWeather.iOS;assembly=MyWeatheriOS"
              xmlns:iosCoreGraphics="clr-namespace:CoreGraphics;assembly=Xamarin.iOS;targetPlatform=iOS" 
              Title="Weather">
   <ContentPage.Resources>
@@ -27,15 +28,16 @@
           <Switch IsToggled="{Binding UseGPS}"/>
       </StackLayout>
 
-      <ios:UISegmentedControl SelectedSegment="{Binding IsImperial, Mode=TwoWay,
-                              Converter={StaticResource IntToBoolConverter}}">
-        <x:Arguments>
-          <x:Array Type="{x:Type x:String}">
-            <x:String> F° </x:String>
-            <x:String> C° </x:String>
-          </x:Array>
-        </x:Arguments>
-      </ios:UISegmentedControl>
+      <StackLayout HorizontalOptions="Center">
+        <myiOS:KVOSegmentedControl 
+                                KVOSelected="{Binding IsImperial,
+                                Converter={StaticResource IntToBoolConverter}}">
+          <x:Arguments>
+            <x:String>  F°  </x:String>
+            <x:String>  C°  </x:String>
+          </x:Arguments>
+        </myiOS:KVOSegmentedControl>
+      </StackLayout>
       
       <StackLayout Orientation="Horizontal" Spacing="10">
         <StackLayout.IsVisible>

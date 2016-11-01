@@ -39,8 +39,17 @@ namespace MyWeather.ViewModels
             }
         }
 
-
-
+        int isImperialiOS;
+        public int IsImperialiOS
+        {
+            get { return isImperialiOS; }
+            set
+            {
+                isImperialiOS = value;
+                IsImperial = isImperialiOS == 0;
+                OnPropertyChanged();
+            }
+        }
 
         bool isImperial = Settings.IsImperial;
         public bool IsImperial
