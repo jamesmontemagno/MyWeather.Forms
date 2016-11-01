@@ -12,7 +12,6 @@ using Xamarin.Forms.Xaml;
 [assembly: AssemblyCulture("")]
 
 
-[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 
 
 // The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".

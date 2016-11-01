@@ -2,7 +2,15 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyWeather.View.WeatherView"
+             xmlns:converters="clr-namespace:MyWeather.Converters;assembly=MyWeather"
+             xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
+             xmlns:iosCoreGraphics="clr-namespace:CoreGraphics;assembly=Xamarin.iOS;targetPlatform=iOS" 
              Title="Weather">
+  <ContentPage.Resources>
+    <ResourceDictionary>
+      <converters:IntToBoolConverter x:Key="IntToBoolConverter"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
     <StackLayout Padding="10" Spacing="10">
         <Entry Text="{Binding Location}">
             <Entry.Triggers>
@@ -14,10 +22,28 @@
             </Entry.Triggers>
         </Entry>
 
-        <StackLayout Orientation="Horizontal" Spacing="10">
-            <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
-            <Switch IsToggled="{Binding UseGPS}"/>
-        </StackLayout>
+      <StackLayout Orientation="Horizontal" Spacing="10">
+          <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+          <Switch IsToggled="{Binding UseGPS}"/>
+      </StackLayout>
+
+      <ios:UISegmentedControl SelectedSegment="{Binding IsImperial, Mode=TwoWay,
+                              Converter={StaticResource IntToBoolConverter}}">
+        <x:Arguments>
+          <x:Array Type="{x:Type x:String}">
+            <x:String> F° </x:String>
+            <x:String> C° </x:String>
+          </x:Array>
+        </x:Arguments>
+      </ios:UISegmentedControl>
+      
+      <StackLayout Orientation="Horizontal" Spacing="10">
+        <StackLayout.IsVisible>
+          <OnPlatform x:TypeArguments="x:Boolean" iOS="false" />
+        </StackLayout.IsVisible>
+        <Label Text="Use Imperial" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        <Switch HorizontalOptions="Start" IsToggled="{Binding IsImperial}"/>
+      </StackLayout>
         
         <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
         <Label Text="{Binding Temp}" FontSize="24"/>
