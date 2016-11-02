@@ -33,7 +33,7 @@
     <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Converters\IntToBoolConverter.cs" />
+    <Compile Include="Converters\BoolToIntConverter.cs" />
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Model\Weather.cs" />
     <Compile Include="App.cs" />

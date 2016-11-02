@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MyWeather.View.WeatherView"
+             xmlns:design="clr-namespace:MyWeather;assembly=MyWeather"
+             BindingContext="{x:Static design:ViewModelLocator.WeatherViewModel}"
              xmlns:converters="clr-namespace:MyWeather.Converters;assembly=MyWeather"
              xmlns:ios="clr-namespace:UIKit;assembly=Xamarin.iOS;targetPlatform=iOS"
              xmlns:myiOS="clr-namespace:MyWeather.iOS;assembly=MyWeatheriOS"
@@ -9,7 +11,7 @@
              Title="Weather">
   <ContentPage.Resources>
     <ResourceDictionary>
-      <converters:IntToBoolConverter x:Key="IntToBoolConverter"/>
+      <converters:BoolToIntConverter x:Key="BoolToIntConverter"/>
     </ResourceDictionary>
   </ContentPage.Resources>
     <StackLayout Padding="10" Spacing="10">
@@ -24,36 +26,32 @@
         </Entry>
 
       <StackLayout Orientation="Horizontal" Spacing="10">
-          <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+          <Label Text="Use GPS" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
           <Switch IsToggled="{Binding UseGPS}"/>
       </StackLayout>
 
-      <StackLayout HorizontalOptions="Center">
-        <myiOS:KVOSegmentedControl 
-                                KVOSelected="{Binding IsImperial,
-                                Converter={StaticResource IntToBoolConverter}}">
-          <x:Arguments>
-            <x:String>  F°  </x:String>
-            <x:String>  C°  </x:String>
-          </x:Arguments>
-        </myiOS:KVOSegmentedControl>
-      </StackLayout>
-      
       <StackLayout Orientation="Horizontal" Spacing="10">
         <StackLayout.IsVisible>
-          <OnPlatform x:TypeArguments="x:Boolean" iOS="false" />
+          <OnPlatform x:TypeArguments="x:Boolean" iOS="false" Android="true" WinPhone="true"/>
         </StackLayout.IsVisible>
-        <Label Text="Use Imperial" VerticalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        <Label Text="Use Imperial" VerticalTextAlignment="Center" HorizontalOptions="StartAndExpand"/>
         <Switch HorizontalOptions="Start" IsToggled="{Binding IsImperial}"/>
       </StackLayout>
-        
+      
+        <StackLayout HorizontalOptions="Center">
+        <myiOS:SegmentedControl SelectedIndex="{Binding IsImperialiOS, Mode=TwoWay}">
+          <x:Arguments>
+            <x:String>F°</x:String>
+            <x:String>C°</x:String>
+          </x:Arguments>
+        </myiOS:SegmentedControl>
+      </StackLayout>
         <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
-        <Label Text="{Binding Temp}" FontSize="24"/>
+        <Label Text="{Binding Temp}" FontSize="30" TextColor="Purple"/>
         <Label Text="{Binding Condition}"/>
         <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
     </StackLayout>
 </ContentPage>
-
 
 
 

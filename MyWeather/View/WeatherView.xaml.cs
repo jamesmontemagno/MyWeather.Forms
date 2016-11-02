@@ -10,6 +10,7 @@ namespace MyWeather.View
 
             if (Device.OS == TargetPlatform.iOS)
                 Icon = new FileImageSource { File = "tab1.png" };
+            
         }
     }
 }

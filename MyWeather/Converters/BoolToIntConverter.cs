@@ -8,25 +8,25 @@ using Xamarin.Forms;
 
 namespace MyWeather.Converters
 {
-    class IntToBoolConverter : IValueConverter
+    class BoolToIntConverter : IValueConverter
     {
         public object Convert(object value, Type targetType,
                               object parameter, CultureInfo culture)
         {
-            if ((int)value == 0)
-                return true;
+            if ((bool)value)
+                return 0;
             else
-                return false;
+                return 1;
         }
 
         public object ConvertBack(object value, Type targetType,
                                   object parameter, CultureInfo culture)
         {
 
-            if ((bool)value)
-                return 0;
+            if ((int)value == 0)
+                return true;
 
-            return 1;
+            return false;
         }
     }
 }

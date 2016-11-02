@@ -203,7 +203,7 @@
     <Compile Include="Helpers\Settings.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="UISegmentedControl.cs" />
+    <Compile Include="SegmentedControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\tab1.png" />
