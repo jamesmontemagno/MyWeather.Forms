@@ -23,15 +23,7 @@ namespace MyWeather.iOS
                 SelectedIndex = (int)SelectedSegment;
             };
         }
-
-        /// <summary>
-        /// Thickness property of border
-        /// </summary>
-        public static readonly BindableProperty SelectedIndexProperty =
-          BindableProperty.Create(propertyName: nameof(SelectedIndex),
-              returnType: typeof(int),
-              declaringType: typeof(SegmentedControl),
-              defaultValue: 0);
+       
 
         int index;
         /// <summary>
