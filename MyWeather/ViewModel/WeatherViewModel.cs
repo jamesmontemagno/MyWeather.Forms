@@ -2,17 +2,18 @@ using MyWeather.Helpers;
 using MyWeather.Models;
 using MyWeather.Services;
 using System;
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Plugin.TextToSpeech;
 using Plugin.Geolocator;
+using Plugin.Permissions.Abstractions;
+using Plugin.Permissions;
+using MvvmHelpers;
 
 namespace MyWeather.ViewModels
 {
-    public class WeatherViewModel : INotifyPropertyChanged
+    public class WeatherViewModel : BaseViewModel
     {
         WeatherService WeatherService { get; } = new WeatherService();
 
@@ -22,8 +23,7 @@ namespace MyWeather.ViewModels
             get { return location; }
             set
             {
-                location = value;
-                OnPropertyChanged();
+                SetProperty(ref location, value);
                 Settings.City = value;
             }
         }
@@ -34,8 +34,7 @@ namespace MyWeather.ViewModels
             get { return useGPS; }
             set
             {
-                useGPS = value;
-                OnPropertyChanged();
+                SetProperty(ref useGPS, value);
             }
         }
 
@@ -48,37 +47,27 @@ namespace MyWeather.ViewModels
             get { return isImperial; }
             set
             {
-                isImperial = value;
-                OnPropertyChanged();
+                SetProperty(ref isImperial, value);
                 Settings.IsImperial = value;
             }
         }
-
 
 
         string temp = string.Empty;
         public string Temp
         {
             get { return temp; }
-            set { temp = value; OnPropertyChanged(); }
+            set { SetProperty(ref temp, value); }
         }
 
         string condition = string.Empty;
         public string Condition
         {
             get { return condition; }
-            set { condition = value; OnPropertyChanged(); }
+            set { SetProperty(ref condition, value); ; }
         }
 
-
-
-        bool isBusy = false;
-        public bool IsBusy
-        {
-            get { return isBusy; }
-            set { isBusy = value; OnPropertyChanged(); }
-        }
-
+        
         WeatherForecastRoot forecast;
         public WeatherForecastRoot Forecast
         {
@@ -106,6 +95,9 @@ namespace MyWeather.ViewModels
 
                 if (UseGPS)
                 {
+                    var hasPermission = await CheckPermissions();
+                    if (!hasPermission)
+                        return;
 					
                     var gps = await CrossGeolocator.Current.GetPositionAsync(10000);
                     weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
@@ -123,6 +115,7 @@ namespace MyWeather.ViewModels
                 var unit = IsImperial ? "F" : "C";
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
+
                 CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
             }
             catch (Exception ex)
@@ -135,9 +128,58 @@ namespace MyWeather.ViewModels
             }
         }
 
-        public event PropertyChangedEventHandler PropertyChanged;
+        async Task<bool> CheckPermissions()
+        {
+            var permissionStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
+            bool request = false;
+            if (permissionStatus == PermissionStatus.Denied)
+            {
+                if (Device.RuntimePlatform == Device.iOS)
+                {
 
-        public void OnPropertyChanged([CallerMemberName]string name = "") =>
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
+                    var title = "Location Permission";
+                    var question = "To get your current city the location permission is required. Please go into Settings and turn on Location for the app.";
+                    var positive = "Settings";
+                    var negative = "Maybe Later";
+                    var task = Application.Current?.MainPage?.DisplayAlert(title, question, positive, negative);
+                    if (task == null)
+                        return false;
+
+                    var result = await task;
+                    if (result)
+                    {
+                        CrossPermissions.Current.OpenAppSettings();
+                    }
+
+                    return false;
+                }
+
+                request = true;                
+            }
+
+            if (request || permissionStatus != PermissionStatus.Granted)
+            {
+                var newStatus = await CrossPermissions.Current.RequestPermissionsAsync(Permission.Location);
+                if (newStatus.ContainsKey(Permission.Location) && newStatus[Permission.Location] != PermissionStatus.Granted)
+                {
+                    var title = "Location Permission";
+                    var question = "To get your current city the location permission is required.";
+                    var positive = "Settings";
+                    var negative = "Maybe Later";
+                    var task = Application.Current?.MainPage?.DisplayAlert(title, question, positive, negative);
+                    if (task == null)
+                        return false;
+
+                    var result = await task;
+                    if (result)
+                    {
+                        CrossPermissions.Current.OpenAppSettings();
+                    }
+                    return false;
+                }
+            }
+
+            return true;
+        }
     }
 }

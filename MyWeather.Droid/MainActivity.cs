@@ -1,10 +1,5 @@
-using System;
 
 using Android.App;
-using Android.Content;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
@@ -13,8 +8,11 @@ using Android.Content.PM;
 
 namespace MyWeather.Droid
 {
-	[Activity (Label = "My Weather", MainLauncher = true, Icon = "@drawable/icon")]
-	public class MainActivity : FormsAppCompatActivity
+    [Activity(Label = "@string/app_name",
+    Icon = "@mipmap/ic_launcher",
+    LaunchMode = LaunchMode.SingleTask,
+    ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    public class MainActivity : FormsAppCompatActivity
     {
 
 		protected override void OnCreate (Bundle bundle)
@@ -22,11 +20,12 @@ namespace MyWeather.Droid
 			
 		    ToolbarResource = Resource.Layout.toolbar;
 		    TabLayoutResource = Resource.Layout.tabs;
+
 		    base.OnCreate (bundle);
 
 		    Forms.Init(this, bundle);
 		
-		    LoadApplication(new App());
+		    LoadApplication(new MyWeather.App());
 		}
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)

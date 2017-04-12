@@ -1,7 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <resources>
-    <style name="MyTheme" parent="MyTheme.Base">
+    <style name="Theme.MyTheme" parent="Theme.MyTheme.Base">
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
+
+  <style name="Theme.SplashTheme" parent="Theme.SplashTheme.Base">
+    <item name="android:windowTranslucentNavigation">true</item>
+    <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+    <item name="android:statusBarColor">@android:color/transparent</item>
+  </style>
 </resources>
