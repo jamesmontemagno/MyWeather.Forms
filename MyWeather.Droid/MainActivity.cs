@@ -18,15 +18,16 @@ namespace MyWeather.Droid
 		protected override void OnCreate (Bundle bundle)
 		{
 			
-		    ToolbarResource = Resource.Layout.toolbar;
-		    TabLayoutResource = Resource.Layout.tabs;
+		    ToolbarResource = Resource.Layout.Toolbar;
+		    TabLayoutResource = Resource.Layout.Tabbar;
 
 		    base.OnCreate (bundle);
 
 		    Forms.Init(this, bundle);
 		
-		    LoadApplication(new MyWeather.App());
-		}
+		    LoadApplication(new App());
+            
+        }
 
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
         {

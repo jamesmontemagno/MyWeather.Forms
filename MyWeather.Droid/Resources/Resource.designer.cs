@@ -2939,10 +2939,10 @@ namespace MyWeather.Droid
 			public const int support_simple_spinner_dropdown_item = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int tabs = 2130968631;
+			public const int Tabbar = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int toolbar = 2130968632;
+			public const int Toolbar = 2130968632;
 			
 			static Layout()
 			{

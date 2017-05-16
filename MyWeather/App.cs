@@ -19,6 +19,9 @@ namespace MyWeather
                     new ForecastView()
                 }
             };
+
+
+            
             
             MainPage = new NavigationPage(tabs)
             {
