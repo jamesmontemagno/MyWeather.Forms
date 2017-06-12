@@ -5,10 +5,11 @@ using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
-using Plugin.TextToSpeech;
 using Plugin.Geolocator;
+#if __IOS__ || __ANDROID__
 using Plugin.Permissions.Abstractions;
 using Plugin.Permissions;
+#endif
 using MvvmHelpers;
 
 namespace MyWeather.ViewModels
@@ -67,7 +68,7 @@ namespace MyWeather.ViewModels
             set { SetProperty(ref condition, value); ; }
         }
 
-        
+
         WeatherForecastRoot forecast;
         public WeatherForecastRoot Forecast
         {
@@ -91,15 +92,15 @@ namespace MyWeather.ViewModels
             {
                 WeatherRoot weatherRoot = null;
                 var units = IsImperial ? Units.Imperial : Units.Metric;
-               
+
 
                 if (UseGPS)
                 {
                     var hasPermission = await CheckPermissions();
                     if (!hasPermission)
                         return;
-					
-                    var gps = await CrossGeolocator.Current.GetPositionAsync(10000);
+
+                    var gps = await CrossGeolocator.Current.GetPositionAsync(TimeSpan.FromSeconds(10));
                     weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
                 }
                 else
@@ -107,7 +108,7 @@ namespace MyWeather.ViewModels
                     //Get weather by city
                     weatherRoot = await WeatherService.GetWeather(Location.Trim(), units);
                 }
-                
+
 
                 //Get forecast based on cityId
                 Forecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
@@ -116,7 +117,6 @@ namespace MyWeather.ViewModels
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
 
-                CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
             }
             catch (Exception ex)
             {
@@ -130,6 +130,7 @@ namespace MyWeather.ViewModels
 
         async Task<bool> CheckPermissions()
         {
+#if __ANDROID__ || __IOS__
             var permissionStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
             bool request = false;
             if (permissionStatus == PermissionStatus.Denied)
@@ -178,7 +179,7 @@ namespace MyWeather.ViewModels
                     return false;
                 }
             }
-
+#endif
             return true;
         }
     }
