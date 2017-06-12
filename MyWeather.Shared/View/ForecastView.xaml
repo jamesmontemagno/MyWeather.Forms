@@ -34,13 +34,26 @@
         </ListView.ItemTemplate>
     </ListView>
 </ContentPage>
-    
-        
 
 
-    
 
-    
+<!--
+xmlns:templates="clr-namespace:MyWeather.Cell;assembly=MyWeather"
+<ContentPage.Resources>
+    <ResourceDictionary>
+      <templates:WeatherTemplateSelector x:Key="WeatherTemplateSelector"/>
+    </ResourceDictionary>
+  </ContentPage.Resources>
+  
+  ItemTemplate="{StaticResource WeatherTemplateSelector}" 
+  -->
+
+
+
+
+
+
+
 
 
 

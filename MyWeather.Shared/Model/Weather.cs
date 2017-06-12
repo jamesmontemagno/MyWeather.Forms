@@ -98,6 +98,9 @@ namespace MyWeather.Models
         public string Date { get; set; } = string.Empty;
 
         [JsonIgnore]
+        public bool IsRainy => ((Weather[0].Icon.Contains("10") || Weather[0].Icon.Contains("09")) ? true : false);
+
+        [JsonIgnore]
         public string DisplayDate => DateTime.Parse(Date).ToLocalTime().ToString("g");
         [JsonIgnore]
         public string DisplayTemp => $"Temp: {MainWeather?.Temperature ?? 0}° {Weather?[0]?.Main ?? string.Empty}";

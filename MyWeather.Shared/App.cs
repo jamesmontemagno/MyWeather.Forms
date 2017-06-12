@@ -1,10 +1,14 @@
 ﻿using MyWeather.View;
 using MyWeather.ViewModels;
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 using static System.Diagnostics.Debug;
 
+[assembly:XamlCompilation(XamlCompilationOptions.Compile)]
+[assembly: ResolutionGroupName("MyWeather")]
 namespace MyWeather
 {
+    
     public class App : Application
     {
         public App()

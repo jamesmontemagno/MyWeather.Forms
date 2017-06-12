@@ -116,7 +116,7 @@ namespace MyWeather.ViewModels
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
 
-                CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
+                //CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
             }
             catch (Exception ex)
             {

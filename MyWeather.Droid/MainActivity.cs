@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Plugin.Permissions;
 using Android.Content.PM;
+using Android.Gms.Ads;
 
 namespace MyWeather.Droid
 {
@@ -23,6 +24,7 @@ namespace MyWeather.Droid
 
 		    base.OnCreate (bundle);
 
+            MobileAds.Initialize(ApplicationContext, "ca-app-pub-2457246758474079~6998031863");
 		    Forms.Init(this, bundle);
 		
 		    LoadApplication(new App());
