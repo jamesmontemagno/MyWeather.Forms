@@ -8,7 +8,7 @@
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MyWeather.UWP</RootNamespace>
-    <AssemblyName>MyWeather.UWP</AssemblyName>
+    <AssemblyName>MyWeather</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetPlatformVersion>10.0.10240.0</TargetPlatformVersion>
@@ -164,12 +164,7 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MyWeather\MyWeather.csproj">
-      <Project>{5366cc83-65a3-4969-b883-3229108447e2}</Project>
-      <Name>MyWeather</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <Import Project="..\MyWeather.Shared\MyWeather.Shared.projitems" Label="Shared" />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
