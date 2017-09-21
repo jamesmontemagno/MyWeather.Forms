@@ -99,7 +99,7 @@ namespace MyWeather.ViewModels
                     if (!hasPermission)
                         return;
 					
-                    var gps = await CrossGeolocator.Current.GetPositionAsync(10000);
+                    var gps = await CrossGeolocator.Current.GetPositionAsync(TimeSpan.FromSeconds(10));
                     weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
                 }
                 else
