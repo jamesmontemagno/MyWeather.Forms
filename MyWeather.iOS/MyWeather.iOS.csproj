@@ -236,7 +236,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Effects\LargeTitleEffect.cs" />
     <Compile Include="Effects\EntryBackgroundEffect.cs" />
     <Compile Include="Effects\LabelShadowEffect.cs" />
     <Compile Include="Helpers\Settings.cs" />
