@@ -116,7 +116,8 @@ namespace MyWeather.ViewModels
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
 
-                //CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
+                if(CrossTextToSpeech.IsSupported)
+                    CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
             }
             catch (Exception ex)
             {
@@ -130,6 +131,9 @@ namespace MyWeather.ViewModels
 
         async Task<bool> CheckPermissions()
         {
+            if (!CrossPermissions.IsSupported)
+                return true;
+            
             var permissionStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
             bool request = false;
             if (permissionStatus == PermissionStatus.Denied)
