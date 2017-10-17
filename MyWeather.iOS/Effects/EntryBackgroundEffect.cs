@@ -1,4 +1,4 @@
-﻿using MyWeather.iOS.Helpers;
+﻿using MyWeather.iOS.Effects;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using Xamarin.Forms.Platform.iOS;
 
 
 [assembly: ExportEffect(typeof(EntryBackgroundEffect), "EntryBackgroundEffect")]
-namespace MyWeather.iOS.Helpers
+namespace MyWeather.iOS.Effects
 {
     public class EntryBackgroundEffect : PlatformEffect
     {

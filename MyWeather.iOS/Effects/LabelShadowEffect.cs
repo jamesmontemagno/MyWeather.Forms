@@ -1,13 +1,13 @@
 ﻿using CoreGraphics;
 using MyWeather.Effects;
-using MyWeather.iOS.Helpers;
+using MyWeather.iOS.Effects;
 using System;
 using System.ComponentModel;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
 
 [assembly: ExportEffect(typeof(LabelShadowEffect), "LabelShadowEffect")]
-namespace MyWeather.iOS.Helpers
+namespace MyWeather.iOS.Effects
 {
     public class LabelShadowEffect : PlatformEffect
     {

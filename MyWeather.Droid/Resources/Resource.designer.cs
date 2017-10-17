@@ -26,8 +26,6 @@ namespace MyWeather.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Plugin.TextToSpeech.Resource.String.ApplicationName = global::MyWeather.Droid.Resource.String.ApplicationName;
-			global::Plugin.TextToSpeech.Resource.String.Hello = global::MyWeather.Droid.Resource.String.Hello;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::MyWeather.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -3793,12 +3791,6 @@ namespace MyWeather.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f09005a
-			public const int ApplicationName = 2131296346;
-			
-			// aapt resource value: 0x7f090059
-			public const int Hello = 2131296345;
-			
 			// aapt resource value: 0x7f090030
 			public const int abc_action_bar_home_description = 2131296304;
 			
@@ -3895,8 +3887,8 @@ namespace MyWeather.Droid
 			// aapt resource value: 0x7f090011
 			public const int accept = 2131296273;
 			
-			// aapt resource value: 0x7f09005b
-			public const int app_name = 2131296347;
+			// aapt resource value: 0x7f090059
+			public const int app_name = 2131296345;
 			
 			// aapt resource value: 0x7f090051
 			public const int appbar_scrolling_view_behavior = 2131296337;

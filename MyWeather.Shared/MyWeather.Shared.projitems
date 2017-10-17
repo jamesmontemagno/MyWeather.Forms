@@ -19,6 +19,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Cell\WeatherTemplateSelector.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\AdControlView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\EntryBackgroundEffect.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Effects\LargeTitleEffect.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\ShadowEffect.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Helpers\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IToast.cs" />
