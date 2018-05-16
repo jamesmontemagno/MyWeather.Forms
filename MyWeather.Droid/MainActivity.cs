@@ -6,6 +6,7 @@ using Xamarin.Forms.Platform.Android;
 using Plugin.Permissions;
 using Android.Content.PM;
 using Android.Gms.Ads;
+using Plugin.CurrentActivity;
 
 namespace MyWeather.Droid
 {
@@ -25,6 +26,10 @@ namespace MyWeather.Droid
 		    base.OnCreate (bundle);
 
             MobileAds.Initialize(ApplicationContext, "ca-app-pub-2457246758474079~6998031863");
+
+            Xamarin.Essentials.Platform.Init(this, bundle);
+
+            CrossCurrentActivity.Current.Init(this, bundle);
 		    Forms.Init(this, bundle);
 		
 		    LoadApplication(new App());
@@ -34,6 +39,8 @@ namespace MyWeather.Droid
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
         {
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

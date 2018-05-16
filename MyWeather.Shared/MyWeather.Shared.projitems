@@ -20,7 +20,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Controls\AdControlView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\EntryBackgroundEffect.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\ShadowEffect.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IToast.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Weather.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\WeatherService.cs" />

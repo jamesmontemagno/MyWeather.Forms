@@ -224,3 +224,4 @@ pip-log.txt
 .mr.developer.cfg
 *.ide
 .droidres/.myweather.droidres.db
+/.vs

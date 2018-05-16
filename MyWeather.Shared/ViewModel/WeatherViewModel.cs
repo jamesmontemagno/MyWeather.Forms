@@ -1,15 +1,11 @@
-using MyWeather.Helpers;
 using MyWeather.Models;
 using MyWeather.Services;
 using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
-using Plugin.TextToSpeech;
-using Plugin.Geolocator;
-using Plugin.Permissions.Abstractions;
-using Plugin.Permissions;
 using MvvmHelpers;
+using Plugin.Permissions.Abstractions;
 
 namespace MyWeather.ViewModels
 {
@@ -17,14 +13,14 @@ namespace MyWeather.ViewModels
     {
         WeatherService WeatherService { get; } = new WeatherService();
 
-        string location = Settings.City;
+        string location = SettingsService.City;
         public string Location
         {
             get { return location; }
             set
             {
                 SetProperty(ref location, value);
-                Settings.City = value;
+                SettingsService.City = value;
             }
         }
 
@@ -41,14 +37,14 @@ namespace MyWeather.ViewModels
 
 
 
-        bool isImperial = Settings.IsImperial;
+        bool isImperial = SettingsService.IsImperial;
         public bool IsImperial
         {
             get { return isImperial; }
             set
             {
                 SetProperty(ref isImperial, value);
-                Settings.IsImperial = value;
+                SettingsService.IsImperial = value;
             }
         }
 
@@ -95,11 +91,11 @@ namespace MyWeather.ViewModels
 
                 if (UseGPS)
                 {
-                    var hasPermission = await CheckPermissions();
+                    var hasPermission = await PermissionsService.CheckPermissions(Permission.Location);
                     if (!hasPermission)
                         return;
-					
-                    var gps = await CrossGeolocator.Current.GetPositionAsync(TimeSpan.FromSeconds(10));
+
+                    var gps = await GeolocationService.GetCurrentPositionAsync();
                     weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
                 }
                 else
@@ -113,11 +109,11 @@ namespace MyWeather.ViewModels
                 Forecast = await WeatherService.GetForecast(weatherRoot.CityId, units);
 
                 var unit = IsImperial ? "F" : "C";
+
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
 
-                if(CrossTextToSpeech.IsSupported)
-                    CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
+                TextToSpeechService.Speak($" The current temperature is {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}");
             }
             catch (Exception ex)
             {
@@ -129,61 +125,6 @@ namespace MyWeather.ViewModels
             }
         }
 
-        async Task<bool> CheckPermissions()
-        {
-            if (!CrossPermissions.IsSupported)
-                return true;
-            
-            var permissionStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Permission.Location);
-            bool request = false;
-            if (permissionStatus == PermissionStatus.Denied)
-            {
-                if (Device.RuntimePlatform == Device.iOS)
-                {
-
-                    var title = "Location Permission";
-                    var question = "To get your current city the location permission is required. Please go into Settings and turn on Location for the app.";
-                    var positive = "Settings";
-                    var negative = "Maybe Later";
-                    var task = Application.Current?.MainPage?.DisplayAlert(title, question, positive, negative);
-                    if (task == null)
-                        return false;
-
-                    var result = await task;
-                    if (result)
-                    {
-                        CrossPermissions.Current.OpenAppSettings();
-                    }
-
-                    return false;
-                }
-
-                request = true;                
-            }
-
-            if (request || permissionStatus != PermissionStatus.Granted)
-            {
-                var newStatus = await CrossPermissions.Current.RequestPermissionsAsync(Permission.Location);
-                if (newStatus.ContainsKey(Permission.Location) && newStatus[Permission.Location] != PermissionStatus.Granted)
-                {
-                    var title = "Location Permission";
-                    var question = "To get your current city the location permission is required.";
-                    var positive = "Settings";
-                    var negative = "Maybe Later";
-                    var task = Application.Current?.MainPage?.DisplayAlert(title, question, positive, negative);
-                    if (task == null)
-                        return false;
-
-                    var result = await task;
-                    if (result)
-                    {
-                        CrossPermissions.Current.OpenAppSettings();
-                    }
-                    return false;
-                }
-            }
-
-            return true;
-        }
+       
     }
 }
