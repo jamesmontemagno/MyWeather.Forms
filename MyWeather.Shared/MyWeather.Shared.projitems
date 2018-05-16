@@ -49,4 +49,7 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Styles\ForecastView.css" />
+  </ItemGroup>
 </Project>
