@@ -17,6 +17,7 @@ local.properties
 .loadpath
 mobile.userprefs
 .nuget
+.vs/
 
 # External tool builders
 .externalToolBuilders/
