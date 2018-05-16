@@ -15,7 +15,7 @@
 .item {
     padding: 0;
     has-shadow: true;
-    margin: 8,8;
+    margin: 0,8;
     height: 150;
     width: 100;
 }

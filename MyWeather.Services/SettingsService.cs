@@ -22,7 +22,7 @@ namespace MyWeather.Services
 
 
         private const string CityKey = "city";
-        private static readonly string CityDefault = "Seattle,WA";
+        private static readonly string CityDefault = "Seattle";
 
         #endregion
 
