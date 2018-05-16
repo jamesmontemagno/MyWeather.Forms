@@ -16,6 +16,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)Cell\RainDataTemplate.xaml.cs">
       <DependentUpon>RainDataTemplate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Cell\WeatherCardView.xaml.cs">
+      <DependentUpon>WeatherCardView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Cell\WeatherTemplateSelector.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\AdControlView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\EntryBackgroundEffect.cs" />
@@ -51,5 +55,11 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Styles\ForecastView.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Cell\WeatherCardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 </Project>

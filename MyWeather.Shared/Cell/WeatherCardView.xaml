@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MyWeather.Cell.WeatherCardView">
+    <ContentView.Resources>
+        <StyleSheet Source="../Styles/ForecastView.css"/>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <Frame class="item">            
+            <Grid Padding="16,5" RowSpacing="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Image HeightRequest="44"
+                       WidthRequest="44"
+                       HorizontalOptions="Center"
+                        Source="{Binding DisplayIcon}"/>
+                <Label  Grid.Row="1"
+                          Text="{Binding DisplayTemp}"
+                          TextColor="#3498db"
+                          FontSize="Small"/>
+                <Label Grid.Row="2"
+                         Text="{Binding DisplayDate}"
+                       FontSize="Micro"/>
+            </Grid>
+        </Frame>
+    </ContentView.Content>
+</ContentView>
