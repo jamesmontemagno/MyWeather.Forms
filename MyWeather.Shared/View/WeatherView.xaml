@@ -5,7 +5,9 @@
              xmlns:effects="clr-namespace:MyWeather.Effects;assembly=MyWeather"
              xmlns:controls="clr-namespace:MyWeather.Controls;assembly=MyWeather"
              Title="Weather">
-
+    <ContentPage.Resources>
+        <StyleSheet Source="../Styles/ForecastView.css"/>
+    </ContentPage.Resources>
     <Grid Padding="10" RowSpacing="10" ColumnSpacing="10">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -34,7 +36,7 @@
         <Switch Grid.Row="2" Grid.Column="1" IsToggled="{Binding IsImperial}"/>
 
         <StackLayout Grid.Row="3" Grid.ColumnSpan="2">
-            <Button Text="Get Weather" Command="{Binding GetWeatherCommand}"/>
+            <Button Text="Get Weather" Command="{Binding GetWeatherCommand}" class="outline"/>
             <Label Text="{Binding Temp}" FontSize="24"/>
             <Label Text="{Binding Condition}"/>
             <ActivityIndicator Margin="0,20,0,0" IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"/>
