@@ -1,7 +1,7 @@
 MyWeather.Forms
 ===================
 
-This is a small sample application showing how to query OpenWeatherMap.org to gather weather for a current location.
+This is a small sample, somewhat complex, application showing how to query OpenWeatherMap.org to gather weather for a current location.
 
 Built with C# 6 features, you must be running VS 2015 or Xamarin Studio to compile. 
 
