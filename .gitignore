@@ -17,6 +17,7 @@ local.properties
 .loadpath
 mobile.userprefs
 .nuget
+.vs/
 
 # External tool builders
 .externalToolBuilders/
@@ -224,3 +225,4 @@ pip-log.txt
 .mr.developer.cfg
 *.ide
 .droidres/.myweather.droidres.db
+/.vs

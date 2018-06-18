@@ -2,14 +2,14 @@
 using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 
-namespace MyWeather.Helpers
+namespace MyWeather.Services
 {
     /// <summary>
     /// This is the Settings static class that can be used in your Core solution or in any
     /// of your client applications. All settings are laid out the same exact way with getters
     /// and setters. 
     /// </summary>
-    public static class Settings
+    public static class SettingsService
     {
         private static ISettings AppSettings
         {
@@ -30,7 +30,7 @@ namespace MyWeather.Helpers
 
 
         private const string CityKey = "city";
-        private static readonly string CityDefault = "Seattle,WA";
+        private static readonly string CityDefault = "Seattle";
 
         #endregion
 

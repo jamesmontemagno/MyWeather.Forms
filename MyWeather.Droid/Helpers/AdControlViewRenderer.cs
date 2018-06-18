@@ -3,6 +3,7 @@ using Android.Gms.Ads;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using MyWeather.Controls;
+using Android.Content;
 
 [assembly: ExportRenderer(typeof(MyWeather.Controls.AdControlView), typeof(MyWeather.Droid.Helpers.AdControlViewRenderer))]
 namespace MyWeather.Droid.Helpers
@@ -12,6 +13,16 @@ namespace MyWeather.Droid.Helpers
         string adUnitId = string.Empty;
         AdSize adSize = AdSize.Banner;
         AdView adView;
+
+        public AdControlViewRenderer () : base()
+        {
+
+        }
+
+        public AdControlViewRenderer(Context context) : base(context)
+        {
+        }
+
         AdView CreateAdNativeControl()
         {
             if (adView != null)

@@ -16,11 +16,14 @@
     <Compile Include="$(MSBuildThisFileDirectory)Cell\RainDataTemplate.xaml.cs">
       <DependentUpon>RainDataTemplate.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Cell\WeatherCardView.xaml.cs">
+      <DependentUpon>WeatherCardView.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Cell\WeatherTemplateSelector.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Controls\AdControlView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\EntryBackgroundEffect.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Effects\ShadowEffect.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Helpers\Settings.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IToast.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Model\Weather.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\WeatherService.cs" />
@@ -48,6 +51,15 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Cell\RainDataTemplate.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Styles\ForecastView.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Cell\WeatherCardView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

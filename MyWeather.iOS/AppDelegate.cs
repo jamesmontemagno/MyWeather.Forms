@@ -13,12 +13,7 @@ namespace MyWeather.iOS
     {
 		
 		public override bool FinishedLaunching (UIApplication app, NSDictionary options)
-		{
-
-
-            UINavigationBar.Appearance.LargeTitleTextAttributes =
-                new UIStringAttributes { ForegroundColor = UIColor.White };
-
+		{           
             Forms.Init();
 
             LoadApplication(new App());

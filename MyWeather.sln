@@ -13,8 +13,15 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MyWeather", "MyWeather.Shar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeather.macOS", "MyWeather.macOS\MyWeather.macOS.csproj", "{0FCF10DD-C645-48D0-A05B-7860F214156C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeather.Services", "MyWeather.Services\MyWeather.Services.csproj", "{ACB404A7-98BE-485B-B09F-5CE958832FCC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Desktop", "Desktop", "{772D6DF4-8C8E-432B-8135-FB1588737CD3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Platforms", "Platforms", "{FB1E6D35-DF54-4C88-BBD7-74433A306667}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		MyWeather.Shared\MyWeather.Shared.projitems*{0fcf10dd-c645-48d0-a05b-7860f214156c}*SharedItemsImports = 4
 		MyWeather.Shared\MyWeather.Shared.projitems*{65b45a0f-d6d8-432f-b36d-d7d41675dc76}*SharedItemsImports = 4
 		MyWeather.Shared\MyWeather.Shared.projitems*{7f106fba-12e5-4d92-9f4c-38ead1652e7e}*SharedItemsImports = 4
 		MyWeather.Shared\MyWeather.Shared.projitems*{829907c9-39bf-49f2-91c3-abfb255a9216}*SharedItemsImports = 13
@@ -142,8 +149,41 @@ Global
 		{0FCF10DD-C645-48D0-A05B-7860F214156C}.Release|x64.Build.0 = Release|Any CPU
 		{0FCF10DD-C645-48D0-A05B-7860F214156C}.Release|x86.ActiveCfg = Release|Any CPU
 		{0FCF10DD-C645-48D0-A05B-7860F214156C}.Release|x86.Build.0 = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|ARM.Build.0 = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|iPhone.ActiveCfg = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|iPhone.Build.0 = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|iPhoneSimulator.ActiveCfg = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|iPhoneSimulator.Build.0 = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|x64.Build.0 = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Debug|x86.Build.0 = Debug|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|ARM.ActiveCfg = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|ARM.Build.0 = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|iPhone.ActiveCfg = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|iPhone.Build.0 = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|x64.ActiveCfg = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|x64.Build.0 = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|x86.ActiveCfg = Release|Any CPU
+		{ACB404A7-98BE-485B-B09F-5CE958832FCC}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7F106FBA-12E5-4D92-9F4C-38EAD1652E7E} = {FB1E6D35-DF54-4C88-BBD7-74433A306667}
+		{65B45A0F-D6D8-432F-B36D-D7D41675DC76} = {FB1E6D35-DF54-4C88-BBD7-74433A306667}
+		{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC} = {FB1E6D35-DF54-4C88-BBD7-74433A306667}
+		{0FCF10DD-C645-48D0-A05B-7860F214156C} = {772D6DF4-8C8E-432B-8135-FB1588737CD3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {438FBC09-91B7-4052-8C91-D2F2050F25C5}
 	EndGlobalSection
 EndGlobal
