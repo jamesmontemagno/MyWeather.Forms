@@ -1,29 +1,15 @@
 ﻿using MyWeather.View;
-using MyWeather.ViewModels;
 using Xamarin.Forms;
 using static System.Diagnostics.Debug;
 
+[assembly:Xamarin.Forms.Xaml.XamlCompilation(Xamarin.Forms.Xaml.XamlCompilationOptions.Compile)]
 namespace MyWeather
 {
     public class App : Application
     {
         public App()
         {
-            var tabs = new TabbedPage
-            {
-                Title ="My Weather",
-                BindingContext = new WeatherViewModel(),
-                Children =
-                {
-                    new WeatherView(),
-                    new ForecastView()
-                }
-            };
-
-
-            
-            
-            MainPage = new NavigationPage(tabs)
+            MainPage = new NavigationPage(new MainTabs())
             {
                 BarBackgroundColor = Color.FromHex("3498db"),
                 BarTextColor = Color.White

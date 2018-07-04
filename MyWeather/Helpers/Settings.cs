@@ -1,6 +1,5 @@
 // Helpers/Settings.cs
-using Plugin.Settings;
-using Plugin.Settings.Abstractions;
+using Xamarin.Essentials;
 
 namespace MyWeather.Helpers
 {
@@ -11,13 +10,6 @@ namespace MyWeather.Helpers
     /// </summary>
     public static class Settings
     {
-        private static ISettings AppSettings
-        {
-            get
-            {
-                return CrossSettings.Current;
-            }
-        }
 
         #region Setting Constants
 
@@ -37,39 +29,21 @@ namespace MyWeather.Helpers
 
         public static bool IsImperial
         {
-            get
-            {
-                return AppSettings.GetValueOrDefault(IsImperialKey, IsImperialDefault);
-            }
-            set
-            {
-                AppSettings.AddOrUpdateValue(IsImperialKey, value);
-            }
+            get => Preferences.Get(IsImperialKey, IsImperialDefault);
+            set => Preferences.Set(IsImperialKey, value);
         }
 
 
         public static bool UseCity
         {
-            get
-            {
-                return AppSettings.GetValueOrDefault(UseCityKey, UseCityDefault);
-            }
-            set
-            {
-                AppSettings.AddOrUpdateValue(UseCityKey, value);
-            }
+            get => Preferences.Get(UseCityKey, UseCityDefault);
+            set => Preferences.Set(UseCityKey, value);
         }
 
         public static string City
         {
-            get
-            {
-                return AppSettings.GetValueOrDefault(CityKey, CityDefault);
-            }
-            set
-            {
-                AppSettings.AddOrUpdateValue(CityKey, value);
-            }
+            get => Preferences.Get(CityKey, CityDefault);
+            set => Preferences.Set(CityKey, value);
         }
 
     }

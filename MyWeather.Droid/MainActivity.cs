@@ -5,6 +5,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Platform.Android;
 using Plugin.Permissions;
 using Android.Content.PM;
+using Plugin.CurrentActivity;
 
 namespace MyWeather.Droid
 {
@@ -21,8 +22,9 @@ namespace MyWeather.Droid
 		    TabLayoutResource = Resource.Layout.Tabbar;
 
 		    base.OnCreate (bundle);
-
-		    Forms.Init(this, bundle);
+            Xamarin.Essentials.Platform.Init(this, bundle);
+            CrossCurrentActivity.Current.Init(this, bundle);
+            Forms.Init(this, bundle);
 		
 		    LoadApplication(new App());
             
@@ -31,6 +33,8 @@ namespace MyWeather.Droid
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
         {
             PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
+            base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
     }
 }

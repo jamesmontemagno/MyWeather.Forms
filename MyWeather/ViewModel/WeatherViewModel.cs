@@ -5,11 +5,11 @@ using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
-using Plugin.TextToSpeech;
-using Plugin.Geolocator;
 using Plugin.Permissions.Abstractions;
 using Plugin.Permissions;
 using MvvmHelpers;
+
+using Xamarin.Essentials;
 
 namespace MyWeather.ViewModels
 {
@@ -98,9 +98,20 @@ namespace MyWeather.ViewModels
                     var hasPermission = await CheckPermissions();
                     if (!hasPermission)
                         return;
-					
-                    var gps = await CrossGeolocator.Current.GetPositionAsync(TimeSpan.FromSeconds(10));
-                    weatherRoot = await WeatherService.GetWeather(gps.Latitude, gps.Longitude, units);
+
+                    var position = await Geolocation.GetLastKnownLocationAsync();
+
+                    if (position == null)
+                    {
+                        // get full location if not cached.
+                        position = await Geolocation.GetLocationAsync(new GeolocationRequest
+                        {
+                            DesiredAccuracy = GeolocationAccuracy.Medium,
+                            Timeout = TimeSpan.FromSeconds(30)
+                        });
+                    }
+                    
+                    weatherRoot = await WeatherService.GetWeather(position.Latitude, position.Longitude, units);
                 }
                 else
                 {
@@ -116,7 +127,7 @@ namespace MyWeather.ViewModels
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
 
-                await CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
+                await TextToSpeech.SpeakAsync(Temp + " " + Condition);
             }
             catch (Exception ex)
             {
