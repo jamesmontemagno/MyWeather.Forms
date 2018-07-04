@@ -17,7 +17,6 @@ namespace MyWeather.Droid
 
 		protected override void OnCreate (Bundle bundle)
 		{
-			
 		    ToolbarResource = Resource.Layout.Toolbar;
 		    TabLayoutResource = Resource.Layout.Tabbar;
 

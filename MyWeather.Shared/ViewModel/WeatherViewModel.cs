@@ -116,11 +116,12 @@ namespace MyWeather.ViewModels
                 Temp = $"Temp: {weatherRoot?.MainWeather?.Temperature ?? 0}°{unit}";
                 Condition = $"{weatherRoot.Name}: {weatherRoot?.Weather?[0]?.Description ?? string.Empty}";
 
-                CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
+                await CrossTextToSpeech.Current.Speak(Temp + " " + Condition);
             }
             catch (Exception ex)
             {
                 Temp = "Unable to get Weather";
+                System.Diagnostics.Debug.WriteLine(ex.Message);
             }
             finally
             {
