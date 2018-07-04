@@ -2,7 +2,7 @@
 <resources>
     <style name="Theme.MyTheme" parent="Theme.MyTheme.Base">
         <item name="android:windowDrawsSystemBarBackgrounds">true</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
     </style>
 
   <style name="Theme.SplashTheme" parent="Theme.SplashTheme.Base">
