@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeather.Android", "MyWeat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeather.UWP", "MyWeather.UWP\MyWeather.UWP.csproj", "{E4A3F53C-2DB8-4962-B8E9-7B961B4D0EDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeather", "MyWeather\MyWeather.csproj", "{BEA93149-A009-455D-B742-D4BC36DE5AB9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyWeather", "MyWeather\MyWeather.csproj", "{BEA93149-A009-455D-B742-D4BC36DE5AB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
