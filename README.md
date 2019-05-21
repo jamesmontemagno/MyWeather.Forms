@@ -1,4 +1,4 @@
-MyWeather.Forms
+MyWeather.Forms Lab
 ===================
 
 This is a small sample application showing how to query OpenWeatherMap.org to gather weather for a current location.
